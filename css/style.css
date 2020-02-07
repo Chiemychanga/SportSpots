@@ -1,0 +1,25 @@
+*{
+    color: white;
+    background-color: gray;
+    font-weight: bolder;
+}
+header{
+    text-align: right;
+}
+span{
+    color:rgb(91, 231, 91);
+    font-size: 30px;
+    font-weight: bold;
+}
+span::after{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+}
+/*
+Changing boot strap set
+*/
+.navbar-collapse{
+    justify-content: space-around;
+
+}
