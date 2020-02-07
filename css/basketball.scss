@@ -1,0 +1,50 @@
+body {
+    header {
+        div {
+            margin: 2em;
+            h1 {
+                font-size: x-large;
+            }
+        }
+    }
+
+    main {
+        background-color: white;
+    }
+
+    footer {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 2em;
+        .container {
+            .row {
+                #firstFooterColumn {
+                    border-right: 2px solid gray;
+                }
+                .col-3 {
+                        background-color: white;
+                    h4 {
+                        color:gray;
+                        background-color: white;
+                    }
+                    p {
+                        color:gray;
+                        background-color: white;
+                        font-weight: normal;
+                    }
+                    ul {
+                        background-color: white;
+                        li {
+                            background-color: white;
+                            color: gray;
+                            a {
+                                font-weight: normal;
+                                color: rgb(91, 231, 91);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

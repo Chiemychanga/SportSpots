@@ -1,0 +1,51 @@
+body header div {
+  margin: 2em;
+}
+
+body header div h1 {
+  font-size: x-large;
+}
+
+body main {
+  background-color: white;
+}
+
+body footer {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+body footer .container .row #firstFooterColumn {
+  border-right: 2px solid gray;
+}
+
+body footer .container .row .col-3 {
+  background-color: white;
+}
+
+body footer .container .row .col-3 h4 {
+  color: gray;
+  background-color: white;
+}
+
+body footer .container .row .col-3 p {
+  color: gray;
+  background-color: white;
+  font-weight: normal;
+}
+
+body footer .container .row .col-3 ul {
+  background-color: white;
+}
+
+body footer .container .row .col-3 ul li {
+  background-color: white;
+  color: gray;
+}
+
+body footer .container .row .col-3 ul li a {
+  font-weight: normal;
+  color: #5be75b;
+}
+/*# sourceMappingURL=basketball.css.map */
