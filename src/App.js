@@ -1,8 +1,8 @@
 // src/App.js
 import React from 'react';
 
+
 // imports from Amplify library
-import { API, graphqlOperation } from 'aws-amplify'
 //import uuid to create a unique client ID
 import uuid from 'uuid/v4'
 
@@ -10,6 +10,11 @@ import uuid from 'uuid/v4'
 import { listGyms as ListGyms } from './graphql/queries'
 // import the mutation
 import { createGym as CreateGym } from './graphql/mutations'
+
+// src/App.js, import the new component
+import { withAuthenticator } from 'aws-amplify-react'
+// import { API, graphqlOperation } from 'aws-amplify'
+import {API, graphqlOperation, /* new 👉 */ Auth} from 'aws-amplify'
 
 const CLIENT_ID = uuid()
 
@@ -31,8 +36,13 @@ class App extends React.Component {
     } catch (err) {
       console.log('error fetching gyms...', err)
     }
+    // Accessing User Data: add this code to componentDidMount
+    const user = await Auth.currentAuthenticatedUser()
+    console.log('user:', user)
+    console.log('user info:', user.signInUserSession.idToken.payload)
+
   }
-  createGym = async() => {
+  createGym = async () => {
     const { sport, name, time } = this.state
     if (sport === '' || name === '' || time === '') return
 
@@ -43,7 +53,7 @@ class App extends React.Component {
     })
 
     try {
-      await API.graphql(graphqlOperation(CreateGym, {input: gym }))
+      await API.graphql(graphqlOperation(CreateGym, { input: gym }))
       console.log('item created!')
     } catch (err) {
       console.log('error creating gym...', err)
@@ -84,10 +94,11 @@ class App extends React.Component {
               <p>{gym.time}</p>
             </div>
           ))
-        }        
+        }
       </>
     )
   }
 }
 
-export default App
+// src/App.js, change the default export to this:
+export default withAuthenticator(App, { includeGreetings: true })
