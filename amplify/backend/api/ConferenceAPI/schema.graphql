@@ -1,8 +1,7 @@
-type Todo @model {
+type Gym @model {
   id: ID!
   clientId: ID
+  sport: String!
   name: String!
-  description: String!
-  speakerName: String!
-  speakerBio: String!
+  time: String!
 }
