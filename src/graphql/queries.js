@@ -9,6 +9,9 @@ export const getGym = /* GraphQL */ `
       sport
       name
       time
+      comments {
+        nextToken
+      }
     }
   }
 `;
@@ -25,6 +28,38 @@ export const listGyms = /* GraphQL */ `
         sport
         name
         time
+      }
+      nextToken
+    }
+  }
+`;
+export const getComment = /* GraphQL */ `
+  query GetComment($id: ID!) {
+    getComment(id: $id) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
+    }
+  }
+`;
+export const listComments = /* GraphQL */ `
+  query ListComments(
+    $filter: ModelCommentFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        message
+        createdBy
       }
       nextToken
     }

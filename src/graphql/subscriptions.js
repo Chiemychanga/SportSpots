@@ -9,6 +9,9 @@ export const onCreateGym = /* GraphQL */ `
       sport
       name
       time
+      comments {
+        nextToken
+      }
     }
   }
 `;
@@ -20,6 +23,9 @@ export const onUpdateGym = /* GraphQL */ `
       sport
       name
       time
+      comments {
+        nextToken
+      }
     }
   }
 `;
@@ -31,6 +37,57 @@ export const onDeleteGym = /* GraphQL */ `
       sport
       name
       time
+      comments {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateComment = /* GraphQL */ `
+  subscription OnCreateComment($createdBy: String!) {
+    onCreateComment(createdBy: $createdBy) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
+    }
+  }
+`;
+export const onUpdateComment = /* GraphQL */ `
+  subscription OnUpdateComment($createdBy: String!) {
+    onUpdateComment(createdBy: $createdBy) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
+    }
+  }
+`;
+export const onDeleteComment = /* GraphQL */ `
+  subscription OnDeleteComment($createdBy: String!) {
+    onDeleteComment(createdBy: $createdBy) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
     }
   }
 `;
