@@ -1,51 +1,104 @@
+span {
+  color: #5be75b;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span::after {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/*
+Changing boot strap set
+*/
+.navbar-collapse {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body {
+  background-color: gray;
+}
+
+body header {
+  background-color: gray;
+}
+
 body header div {
   margin: 2em;
 }
 
 body header div h1 {
   font-size: x-large;
+  text-align: right;
+}
+
+body header div h1 span {
+  color: #5be75b;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body header nav {
+  width: 100vw;
+  background-color: #fff;
+  color: gray;
+}
+
+body header nav #navbarNavAltMarkup {
+  margin: 0px;
+  padding: 0px;
+}
+
+body header nav a:hover {
+  color: gray;
 }
 
 body main {
-  background-color: white;
+  background-color: gray;
 }
 
 body footer {
   width: 100%;
   background-color: white;
-  margin-bottom: 2em;
+  text-align: center;
+  padding: 2em 0;
 }
 
-body footer .container .row #firstFooterColumn {
-  border-right: 2px solid gray;
-}
-
-body footer .container .row .col-3 {
+body footer h4 {
   background-color: white;
-}
-
-body footer .container .row .col-3 h4 {
   color: gray;
-  background-color: white;
 }
 
-body footer .container .row .col-3 p {
-  color: gray;
+body footer h5 {
   background-color: white;
+  color: gray;
+}
+
+body footer p {
+  background-color: white;
+  color: gray;
   font-weight: normal;
 }
 
-body footer .container .row .col-3 ul {
-  background-color: white;
-}
-
-body footer .container .row .col-3 ul li {
-  background-color: white;
-  color: gray;
-}
-
-body footer .container .row .col-3 ul li a {
+body footer a {
   font-weight: normal;
   color: #5be75b;
+  text-align: left;
+}
+
+body footer a:hover {
+  color: gray;
+}
+
+body footer li {
+  background-color: white;
+  color: gray;
+}
+
+body footer ul {
+  background-color: #fff;
 }
 /*# sourceMappingURL=basketball.css.map */
