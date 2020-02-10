@@ -1,48 +1,111 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createGym = /* GraphQL */ `
+  mutation CreateGym(
+    $input: CreateGymInput!
+    $condition: ModelGymConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createGym(input: $input, condition: $condition) {
       id
       clientId
+      sport
       name
-      description
-      speakerName
-      speakerBio
+      time
+      comments {
+        nextToken
+      }
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateGym = /* GraphQL */ `
+  mutation UpdateGym(
+    $input: UpdateGymInput!
+    $condition: ModelGymConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateGym(input: $input, condition: $condition) {
       id
       clientId
+      sport
       name
-      description
-      speakerName
-      speakerBio
+      time
+      comments {
+        nextToken
+      }
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteGym = /* GraphQL */ `
+  mutation DeleteGym(
+    $input: DeleteGymInput!
+    $condition: ModelGymConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteGym(input: $input, condition: $condition) {
       id
       clientId
+      sport
       name
-      description
-      speakerName
-      speakerBio
+      time
+      comments {
+        nextToken
+      }
+    }
+  }
+`;
+export const createComment = /* GraphQL */ `
+  mutation CreateComment(
+    $input: CreateCommentInput!
+    $condition: ModelCommentConditionInput
+  ) {
+    createComment(input: $input, condition: $condition) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
+    }
+  }
+`;
+export const updateComment = /* GraphQL */ `
+  mutation UpdateComment(
+    $input: UpdateCommentInput!
+    $condition: ModelCommentConditionInput
+  ) {
+    updateComment(input: $input, condition: $condition) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
+    }
+  }
+`;
+export const deleteComment = /* GraphQL */ `
+  mutation DeleteComment(
+    $input: DeleteCommentInput!
+    $condition: ModelCommentConditionInput
+  ) {
+    deleteComment(input: $input, condition: $condition) {
+      id
+      message
+      createdBy
+      gym {
+        id
+        clientId
+        sport
+        name
+        time
+      }
     }
   }
 `;

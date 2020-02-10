@@ -10,6 +10,11 @@
             "StackName": "amplify-sportspots-dev-232126",
             "StackId": "arn:aws:cloudformation:eu-west-1:605943071886:stack/amplify-sportspots-dev-232126/75f045e0-497a-11ea-8c44-0a51e14e7998",
             "AmplifyAppId": "d9c5c6y1kd0yc"
+        },
+        "categories": {
+            "auth": {
+                "sportspots6eb77d6f": {}
+            }
         }
     }
 }
