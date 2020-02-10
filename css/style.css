@@ -1,8 +1,12 @@
-*{
+body, footer{
     color: white;
-    background-color: gray;
+    background-color: gray !important;
     font-weight: bolder;
     margin: 0;
+}
+
+footer{
+    font-size: 0.9em;
 }
 header{
     text-align: right;
@@ -19,24 +23,42 @@ span::after{
     font-weight: bold;
 }
 
-#portal.container{
+.container{
 display: flex;
 flex-wrap: wrap;  
-background-color: gray;
+flex-direction: row;
+}
+
+#portal.box:hover{
+    opacity: 0.5;
 }
 
 .box{
 padding: 0px;
-color: white;
 width: 400px;
 height: 300px;
 background-color: transparent;
-margin: 0px;
+margin: 20px;
+}
+
+box#portal.box{
+    text-align: center;
+}
+
+box#contact.box, box#copyright.box{
+    text-align: center;
+}
+
+box.description{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 /*
 Changing boot strap set
 */
 .navbar-collapse{
-    justify-content: space-around;
-
+    justify-content: space-evenly;
+    background-color: burlywood;
+    font-weight: bold;
 }
