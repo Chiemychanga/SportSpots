@@ -1,0 +1,6 @@
+Feb 10, 2020
+I've been going through this tutorial: https://github.com/dabit3/aws-appsync-react-workshop#getting-started---creating-the-react-application
+And I've been having a great easy time following through the tutorial. But then when I want to apply it towards my type of data I'm trying to build, it just doesn't click.
+
+I'm thinking this is too much to grasp in such a short amount of time and without any expert mentors to help guide me. 
+I'm going to abandon using AWS Amplify. 
