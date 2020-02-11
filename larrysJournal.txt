@@ -4,3 +4,22 @@ And I've been having a great easy time following through the tutorial. But then 
 
 I'm thinking this is too much to grasp in such a short amount of time and without any expert mentors to help guide me. 
 I'm going to abandon using AWS Amplify. 
+https://create-react-app.dev/docs/updating-to-new-releases
+I copied all contents from our repo and moved it into a separate folder because now I'm restarting the whole repo using the 
+
+npx create-react-app .
+
+Then ran ` npm install `
+
+# Add storybook
+npx -p @storybook/cli sb init
+
+npm run storybook
+
+npm install --save react-router-dom
+
+npm install react-bootstrap --save
+
+Then I started composing Multiple React.js components, using https://getbootstrap.com/docs/4.0/components/navbar/ for the navbars and footers.
+
+
