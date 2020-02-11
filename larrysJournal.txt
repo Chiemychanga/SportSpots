@@ -1,0 +1,32 @@
+Feb 10, 2020
+I've been going through this tutorial: https://github.com/dabit3/aws-appsync-react-workshop#getting-started---creating-the-react-application
+And I've been having a great easy time following through the tutorial. But then when I want to apply it towards my type of data I'm trying to build, it just doesn't click.
+
+I'm thinking this is too much to grasp in such a short amount of time and without any expert mentors to help guide me. 
+I'm going to abandon using AWS Amplify. 
+https://create-react-app.dev/docs/updating-to-new-releases
+I copied all contents from our repo and moved it into a separate folder because now I'm restarting the whole repo using the 
+
+npx create-react-app .
+
+Then ran ` npm install `
+
+# Add storybook
+npx -p @storybook/cli sb init
+
+npm run storybook
+
+npm install --save react-router-dom
+
+npm install react-bootstrap --save
+
+Then I started composing Multiple React.js components, using https://getbootstrap.com/docs/4.0/components/navbar/ for the navbars and footers.
+
+Now, I want to start using React Router, so I'm going to install `npm install -S react-router`
+
+Then we want to install html5 history : `npm install -S history@1`
+
+then run `npm install`  
+
+p.s. all these installations get added to the package.json under dependencies.
+
