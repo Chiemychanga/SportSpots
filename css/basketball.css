@@ -57,7 +57,14 @@ body header nav a:hover {
 }
 
 body main {
-  background-color: gray;
+  background-color: white;
+  padding-top: 2em;
+}
+
+body main img {
+  display: block;
+  margin: 0 auto;
+  padding: 4em;
 }
 
 body footer {
@@ -100,5 +107,9 @@ body footer li {
 
 body footer ul {
   background-color: #fff;
+}
+
+.align-center {
+  text-align: center;
 }
 /*# sourceMappingURL=basketball.css.map */

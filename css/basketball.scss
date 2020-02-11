@@ -47,7 +47,14 @@ body {
     }
 
     main {
-        background-color: gray;
+        background-color: white;
+        padding-top: 2em;
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            padding: 4em;
+        }
     }
 
     footer {
@@ -91,4 +98,8 @@ body {
             background-color: #fff;
         }
     }
+}
+
+.align-center {
+    text-align: center;
 }
