@@ -22,4 +22,11 @@ npm install react-bootstrap --save
 
 Then I started composing Multiple React.js components, using https://getbootstrap.com/docs/4.0/components/navbar/ for the navbars and footers.
 
+Now, I want to start using React Router, so I'm going to install `npm install -S react-router`
+
+Then we want to install html5 history : `npm install -S history@1`
+
+then run `npm install`  
+
+p.s. all these installations get added to the package.json under dependencies.
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 export default class Footer extends React.Component {
     render() {
@@ -9,7 +10,15 @@ export default class Footer extends React.Component {
                     <div class="row">
                         <div class="col-md-5">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-4">
+                                    <h4>Play by Sport</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Basketball</a></li>
+                                        <li><a href="">Volleyball</a></li>
+                                        <li><a href="">Tennis</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
                                     <h4>Play by Day</h4>
                                     <ul class="list-unstyled">
                                         <li><a href="">Sunday</a></li>
@@ -21,7 +30,7 @@ export default class Footer extends React.Component {
                                         <li><a href="">Saturday</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4">
                                     <h4>Play by Level</h4>
                                     <ul class="list-unstyled">
                                         <li><a href="">Advanced</a></li>
@@ -51,7 +60,7 @@ export default class Footer extends React.Component {
                                     <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                                 </fieldset>
                                 <fieldset class="form-group text-xs-right">
-                                    <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                                    <Button type="button" class="btn btn-secondary-outline btn-lg">Send</Button>
                                 </fieldset>
                             </form>
                         </div>

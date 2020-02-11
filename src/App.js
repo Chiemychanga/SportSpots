@@ -6,9 +6,10 @@ import Header from "./components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const title = "Home";
   return (
     <div className="App">
-      <Header />
+      <Header title={title} />
 
       <Footer />
     </div>
