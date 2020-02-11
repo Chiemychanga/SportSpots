@@ -1,0 +1,94 @@
+span{
+    color:rgb(91, 231, 91);
+    font-size: 30px;
+    font-weight: bold;
+}
+span::after{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+}
+/*
+Changing boot strap set
+*/
+.navbar-collapse{
+    justify-content: space-around;
+
+}
+
+body {
+    background-color: gray;
+    header {
+        background-color: gray;
+        div {
+            margin: 2em;
+            h1 {
+                span{
+                    color:rgb(91, 231, 91);
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                font-size: x-large;
+                text-align: right;
+            }
+        }
+        nav {
+            #navbarNavAltMarkup {
+                margin: 0px;
+                padding: 0px;
+            }
+            width: 100vw;
+            background-color: #fff;
+            color: gray;
+            a:hover {
+            color: gray;
+            }
+        }
+    }
+
+    main {
+        background-color: gray;
+    }
+
+    footer {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 2em 0;
+
+        h4 {
+            background-color: white;
+            color: gray;
+        }
+
+        h5 {
+            background-color: white;
+            color: gray;
+        }
+
+        p {
+            background-color: white;
+            color: gray;
+            font-weight: normal;
+        }
+        
+        a {
+            font-weight: normal;
+            color: rgb(91, 231, 91);
+            text-align: left;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        li {
+            background-color: white;
+            color: gray;
+        }
+
+        ul {
+            background-color: #fff;
+        }
+    }
+}
