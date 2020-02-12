@@ -1,4 +1,4 @@
-class OpenGymInst {
+export class OpenGymInst {
 
     constructor(gymName, address, sport, dayOfWeek, time, cost, levelDescription) {
         this.gymName = gymName;
@@ -10,22 +10,21 @@ class OpenGymInst {
         this.levelDescription = levelDescription;
     }
 
-
     //Setters and getters
 
-    set gymName(gymName) { this.gymName = gymName; }
-    set address(address) { this.address = address; }
-    set sport(sport) { this.sport = sport; }
-    set dayOfWeek(dayOfWeek) { this.dayOfWeek = dayOfWeek; }
-    set time(time) { this.time = time; }
-    set cost(cost) { this.cost = cost; }
-    set levelDescription(levelDescription) { this.levelDescription = levelDescription; }
+    setGymName(gymName) { this.gymName = gymName; }
+    setAddress(address) { this.address = address; }
+    setSport(sport) { this.sport = sport; }
+    setDayOfWeek(dayOfWeek) { this.dayOfWeek = dayOfWeek; }
+    setTime(time) { this.time = time; }
+    setCost(cost) { this.cost = cost; }
+    setLevelDescription(levelDescription) { this.levelDescription = levelDescription; }
 
-    get gymName() { return this.gymName; }
-    get address() { return this.address; }
-    get sport() { return this.sport; }
-    get dayOfWeek() { return this.dayOfWeek; }
-    get time() { return this.time; }
-    get cost() { return this.cost; }
-    get levelDescription() { return this.levelDescription; }
+    getGymName() { return this.gymName; }
+    getAddress() { return this.address; }
+    getSport() { return this.sport; }
+    getDayOfWeek() { return this.dayOfWeek; }
+    getTime() { return this.time; }
+    getCost() { return this.cost; }
+    getLevelDescription() { return this.levelDescription; }
 }
