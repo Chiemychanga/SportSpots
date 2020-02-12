@@ -9,8 +9,7 @@ function App() {
   const title = "Home";
   return (
     <div className="App">
-      <Header title={title} />
-
+      <Header title={title}/>
       <Footer />
     </div>
   );
