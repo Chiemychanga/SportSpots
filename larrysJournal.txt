@@ -30,3 +30,6 @@ then run `npm install`
 
 p.s. all these installations get added to the package.json under dependencies.
 
+Going to continue watching these helpful tutorial videos tomorrow...:
+https://www.youtube.com/watch?v=_D1JGNidMr4&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b&index=5
+
