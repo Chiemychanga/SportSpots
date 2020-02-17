@@ -1,0 +1,14 @@
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.box {
+    padding: 20px;
+    color: white;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(168, 166, 168, 0.5);
+    margin: 10px;
+  }
