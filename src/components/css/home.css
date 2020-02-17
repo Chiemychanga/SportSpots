@@ -12,3 +12,12 @@ height: 300px;
 background-color: transparent;
 margin: 20px;
 }
+
+.gym-spots {
+    background-color: lightblue;
+    margin: 0 10%;
+}
+
+.gym-info {
+    text-align: left;
+}
