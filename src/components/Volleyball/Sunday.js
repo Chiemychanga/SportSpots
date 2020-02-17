@@ -4,7 +4,7 @@ import { OpenGymInst } from "../OpenGymInst";
 
 export default class Sunday extends React.Component {
     render() {
-        const gym1 = new OpenGymInst("gymName", "address", "sport", "dayOfWeek", "time", "cost", "levelDescription");
+        const gym1 = new OpenGymInst("gymName", "address", "sport", "dayOfWeek", "time", "cost", "levelDescription", "website", "description", "numberOfCourts", "courtType", "minimumAge");
         return (
         <div className="gym-spots">
         <h1>Volleyball Spots Sunday</h1>

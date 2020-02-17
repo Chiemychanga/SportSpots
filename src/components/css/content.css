@@ -1,8 +1,11 @@
 .gym-spots {
-    background-color: lightblue;
     margin: 0 10%;
 }
 
 .gym-info {
     text-align: left;
+    padding: 20px;
+    color: black;
+    background-color: rgba(168, 166, 168, 0.5);
+    margin: 10px;
 }
