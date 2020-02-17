@@ -8,6 +8,7 @@ import Wednesday from "./Wednesday";
 import Thursday from "./Thursday";
 import Friday from "./Friday";
 import Saturday from "./Saturday";
+import "../css/content.css";
 
 export default class Volleyball extends React.Component {
     render() {

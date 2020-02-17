@@ -1,6 +1,5 @@
 import React from 'react';
 import { OpenGymInst } from "../OpenGymInst";
-import "../css/home.css";
 export default class Monday extends React.Component {
     render() {
         const gym1 = new OpenGymInst("Conestoga", "9985 SW 125th Avenue, Beaverton, OR 97008", "Volleyball", "Monday and Wednesday", "7:30pm to 9:25pm", "$6.25 (out of district)", "Open");
