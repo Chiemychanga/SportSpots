@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 export default class Footer extends React.Component {
     render() {
@@ -13,9 +14,11 @@ export default class Footer extends React.Component {
                                 <div class="col-4">
                                     <h4>Play by Sport</h4>
                                     <ul class="list-unstyled">
-                                        <li><a href="">Basketball</a></li>
-                                        <li><a href="">Volleyball</a></li>
-                                        <li><a href="">Tennis</a></li>
+                                            <li><a href="">Basketball</a></li>
+                                        <Link to="/Volleyball">
+                                            <li><a href="">Volleyball</a></li>
+                                        </Link>
+                                            <li><a href="">Tennis</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-4">
@@ -47,8 +50,8 @@ export default class Footer extends React.Component {
                             </ul>
                             <br></br>
                         </div>
-                            <div class="col-md-2">
-                                <h5 class="text-md-right">Contact Us</h5>
+                        <div class="col-md-2">
+                            <h5 class="text-md-right">Contact Us</h5>
                             <hr></hr>
                         </div>
                         <div class="col-md-5">
