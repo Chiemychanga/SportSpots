@@ -18,7 +18,9 @@ export default class Footer extends React.Component {
                                         <Link to="/Volleyball">
                                             <li><a href="">Volleyball</a></li>
                                         </Link>
+                                        <Link to="/Tennis">
                                             <li><a href="">Tennis</a></li>
+                                        </Link>
                                     </ul>
                                 </div>
                                 <div class="col-4">
