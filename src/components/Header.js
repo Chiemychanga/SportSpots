@@ -21,10 +21,11 @@ export default class Header extends React.Component {
                                     <a class="nav-link" href="#">Volleyball</a>
                                 </li>
                             </Link>
+                            <Link to="/Tennis">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Tennis</a>
                             </li>
-
+                            </Link>
                         </ul>
                     </div>
                     <form class="form-inline my-2 my-lg-0">
