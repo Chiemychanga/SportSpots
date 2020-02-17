@@ -33,3 +33,10 @@ p.s. all these installations get added to the package.json under dependencies.
 Going to continue watching these helpful tutorial videos tomorrow...:
 https://www.youtube.com/watch?v=_D1JGNidMr4&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b&index=5
 
+Feb 16, 2020
+So what I did today was created routes from the home page to my Volleyball page.
+
+Feb 17, 2020
+I created routes to different components for Volleyball depending on the day of the week.
+I then also created some objects of the gyms for Monday and included a Google links that users may click on to navigate to the directions.
+
