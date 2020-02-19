@@ -1,18 +1,18 @@
 import React from 'react';
 import { OpenGymInst } from "../OpenGymInst";
-import Conestoga from "./images/conestoga.jpg"; 
-import EPCC from "./images/epcc.jpg"; 
-import WillamettePrimarySchool from "./images/willamettePrimarySchool.png"; 
+import SWCommunityCenter from "./images/SWCommunityCenter.jpg"; 
+import LakeGroveElementary from "./images/LakeGroveElementary.jpg"; 
+import AtheyCreekMiddleSchool from "./images/AtheyCreekMiddleSchool.png"; 
 
-export default class Monday extends React.Component {
+export default class Tuesday extends React.Component {
     render() {
-        const gym1 = new OpenGymInst(Conestoga, "Conestoga", "9985 SW 125th Avenue, Beaverton, OR 97008", "https://goo.gl/maps/26BrMpZBaw1BJJjC8", "Volleyball", "Monday and Wednesday", "7:30pm to 9:25pm", "$6.25 (out of district)", "Open", "http://www.thprd.org/facilities/recreation/conestoga/schedule/dropinsports/#dropin", "Wednesday fills quickly, get there early. Not sure about other days. Drop-in tickets available at 6:45pm. Check-in at 7:15pm. Play at 7:30pm. They let in 32 players, then a wait list. So when full, which is often — at least on Wednesday, 8 players per team.", "2", "Indoor", "16");
-        const gym2 = new OpenGymInst(EPCC, "East Portland Community Center", "740 SE 106th Avenue, Portland, OR 97216", "https://goo.gl/maps/zp4jQJNk3XUyA81CA", "Volleyball", "Monday and Thursday", "7:30pm to 9:30pm", "$6.25 (Seniors: $5)", "Open", "http://www.portlandoregon.gov/parks/60370", "Open, advanced play at East Portland Community Center. Plenty of parking and easy access from I-205.", "2", "Indoor", "18");
-        const gym3 = new OpenGymInst(WillamettePrimarySchool, "Willamette Primary School (West Linn Parks)", "1403 12th Street, West Linn, OR 97068", "https://goo.gl/maps/xmauxRXfJZnHiBbT7", "Volleyball", "Monday", "8:00pm to 10:00pm", "$2", "Beginner", "https://westlinnoregon.gov/parksrec/adult-sports-fitness", "", "2", "Indoor", "18");
+        const gym1 = new OpenGymInst(SWCommunityCenter, "SW Community Center", "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8", "Volleyball", "Tuesday and Thursday", "7:30pm to 9:30pm", "$7.25", "Open", "http://www.portlandoregon.gov/parks/60161", "Great location. All days are now open play, all levels.", "2", "Indoor", "16");
+        const gym2 = new OpenGymInst(LakeGroveElementary, "Lake Grove Elementary", "15777 Boones Ferry Rd, Lake Oswego, OR 97035", "https://goo.gl/maps/456SdGUoLUxKfPjq5", "Volleyball", "Tuesday", "7:30pm to 9:45pm", "$4 residents, $6 non-residents", "Open", "http://www.ci.oswego.or.us/parksrec/adult-drop-sports", "Winter 2020: January 7 through March 31. No play 1/14 and 3/24. Check website for schedules, especially around holidays. Not active during the summer — school’s out. Lake Grove has a low ceiling, backboards interfering, odd lines (large courts), and no separation between courts. With that, still fun play.", "2", "Indoor", "18");
+        const gym3 = new OpenGymInst(AtheyCreekMiddleSchool, "Athey Creek Middle School (West Linn Parks)", "2900 SW Borland Rd, Tualatin, OR 97062", "https://goo.gl/maps/YiKfbTfwZ3DFVGF28", "Volleyball", "Tuesday", "8:00pm to 10:00pm", "$2", "Advanced", "http://westlinnoregon.gov/parksrec/adult-sports-fitness", "They say this is power volleyball at AA and A levels.", "2", "Indoor", "18");
         const gyms = [gym1,gym2,gym3];
         return (
             <div className="gym-spots">
-                <h1>Volleyball Spots Monday</h1>
+                <h1>Volleyball Spots Tuesday</h1>
 
                 {gyms.map(function (gym) {
                     return (
