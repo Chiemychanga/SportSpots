@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/content.css";
-import Footer from "../Footer.js";
+import SportFooter from "../SportFooter.js";
 import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { OpenGymInst } from "../OpenGymInst";
@@ -112,6 +112,7 @@ export default class Basketball extends React.Component {
             />
           );
         })}
+        <SportFooter sport="Basketball"/>
       </div>
     );
   }
