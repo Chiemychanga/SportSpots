@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export class OpenGymInst extends React.Component {
+export class OpenGym extends React.Component {
     render() {
         return (
             <div className = "container align-center">
