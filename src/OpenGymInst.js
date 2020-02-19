@@ -1,30 +1,19 @@
-export class OpenGymInst {
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-    constructor(gymName, address, sport, dayOfWeek, time, cost, levelDescription) {
-        this.gymName = gymName;
-        this.address = address;
-        this.sport = sport;
-        this.dayOfWeek = dayOfWeek;
-        this.time = time;
-        this.cost = cost;
-        this.levelDescription = levelDescription;
+
+export class OpenGym extends React.Component {
+    render() {
+        return (
+            <div className = "container align-center">
+                <h2>{this.props.gymName}</h2>
+                <h3>{this.props.address}</h3>
+                <p>Time: {this.props.time}
+                <br />
+                Cost: {this.props.cost}
+                <br />
+                Description: {this.props.description}</p>
+            </div>
+        );
     }
-
-    //Setters and getters
-
-    setGymName(gymName) { this.gymName = gymName; }
-    setAddress(address) { this.address = address; }
-    setSport(sport) { this.sport = sport; }
-    setDayOfWeek(dayOfWeek) { this.dayOfWeek = dayOfWeek; }
-    setTime(time) { this.time = time; }
-    setCost(cost) { this.cost = cost; }
-    setLevelDescription(levelDescription) { this.levelDescription = levelDescription; }
-
-    getGymName() { return this.gymName; }
-    getAddress() { return this.address; }
-    getSport() { return this.sport; }
-    getDayOfWeek() { return this.dayOfWeek; }
-    getTime() { return this.time; }
-    getCost() { return this.cost; }
-    getLevelDescription() { return this.levelDescription; }
 }
