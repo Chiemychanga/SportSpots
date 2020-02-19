@@ -2,6 +2,7 @@ import React from 'react';
 import "./css/tennis.css";
 import gym1 from "./images/portlandTennisCenter.png";
 import gym2 from "./images/lakeOswegoTennisCenter.png"
+import SportFooter from "../SportFooter.js";
 
 export default class MondayTennis extends React.Component {
     render() {
@@ -22,6 +23,7 @@ export default class MondayTennis extends React.Component {
                         (503) 635-5550
                     </div>
                 </div>
+                <SportFooter sport="Tennis"/>
             </div>
         )
     }
