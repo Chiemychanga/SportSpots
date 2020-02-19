@@ -9,3 +9,7 @@
     background-color: rgba(168, 166, 168, 0.5);
     margin: 10px;
 }
+
+.gym-info img {
+    width: 100%;
+}
