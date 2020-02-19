@@ -5,7 +5,7 @@ import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { OpenGymInst } from "../OpenGymInst";
 import { OpenGym } from "../../OpenGymInst";
-
+import basketballPicture from "../images/basketball.png";
 
 const openGyms = [
   new OpenGymInst(
@@ -90,13 +90,27 @@ const openGyms = [
   )
 ];
 
-
 export default class Basketball extends React.Component {
   render() {
     return (
       <div>
+        <br />
+        <h1 className="align-center">Basketball</h1>
+        <br />
+        <img src={basketballPicture} alt="Athletes playing basketball" />
+        <br />
+        <br />
+        <br />
         {openGyms.map(function(gym) {
-          return <OpenGym gymName={gym.getGymName()} address={gym.getAddress()} time={gym.getTime()} cost={gym.getCost()} description={gym.getLevelDescription()}/>
+          return (
+            <OpenGym
+              gymName={gym.getGymName()}
+              address={gym.getAddress()}
+              time={gym.getTime()}
+              cost={gym.getCost()}
+              description={gym.getLevelDescription()}
+            />
+          );
         })}
       </div>
     );
