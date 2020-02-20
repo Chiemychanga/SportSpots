@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import "./css/footer.css"
 
 export default class Footer extends React.Component {
   render() {

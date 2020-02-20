@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./css/footer.css"
 
 export default class SportFooter extends React.Component {
   render() {
     return (
       <footer>
+        <br />
         <br />
         <div className="container">
           <div className="row">
@@ -59,6 +61,7 @@ export default class SportFooter extends React.Component {
             </div>
           </div>
         </div>
+        <br />
         <br />
       </footer>
     );
