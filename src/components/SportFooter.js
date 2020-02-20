@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./css/footer.css"
 
 export default class SportFooter extends React.Component {
   render() {
     return (
       <footer>
+        <br />
         <br />
         <div className="container">
           <div className="row">
@@ -43,15 +46,22 @@ export default class SportFooter extends React.Component {
             <div id="secondFooterColumn" className="col-3">
               <h5>Sports</h5>
               <br />
-              <a href="#">Volley Ball</a>
+              <Link to="/Volleyball">
+                <a href="#">Volleyball</a>
+                <br />
+              </Link>
+              <Link to="/Basketball">
+                <a href="#">Basketball</a>
+              </Link>
               <br />
-              <a href="#">Basketball</a>
-              <br />
-              <a href="#">Tennis</a>
-              <br />
+              <Link to="/Tennis">
+                <a href="#">Tennis</a>
+                <br />
+              </Link>
             </div>
           </div>
         </div>
+        <br />
         <br />
       </footer>
     );
