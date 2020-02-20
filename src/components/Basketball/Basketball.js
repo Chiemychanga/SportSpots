@@ -2,7 +2,6 @@ import React from "react";
 import "../css/content.css";
 import "./css/basketball.css";
 import SportFooter from "../SportFooter.js";
-import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { OpenGymInst } from "../OpenGymInst";
 import { OpenGym } from "../../OpenGymInst";
