@@ -30,7 +30,7 @@ export default class Footer extends React.Component {
               <h5>Sports</h5>
               <br />
               <Link to="/Volleyball">
-                <a href="#">Volley Ball</a>
+                <a href="#">Volleyball</a>
                 <br />
               </Link>
               <Link to="/Basketball">
