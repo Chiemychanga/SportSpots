@@ -1,0 +1,16 @@
+h3, h5, p {
+    display: block;
+    width: 100%;
+}
+
+#daysOfWeekNav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+#daysOfWeekNav  > a {
+    display: inline-block;
+    float:none;
+}

@@ -48,6 +48,7 @@ export default class Header extends React.Component {
               </Link>
             </ul>
           </div>
+          {/*
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
@@ -59,6 +60,7 @@ export default class Header extends React.Component {
               Search
             </button>
           </form>
+          */}
         </nav>
       </header>
     );

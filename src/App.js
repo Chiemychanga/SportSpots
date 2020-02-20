@@ -23,7 +23,6 @@ function App() {
           <Route path="/Tennis" component={Tennis} />
           <Route path="/Basketball" component={Basketball} />
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
