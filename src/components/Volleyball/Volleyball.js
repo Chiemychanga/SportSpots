@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Sunday from "./Sunday";
 import Monday from "./Monday";
-import Tuesday from "./Tuesday";
+import Tuesday from "./Monday";
 import Wednesday from "./Wednesday";
 import Thursday from "./Thursday";
 import Friday from "./Friday";
