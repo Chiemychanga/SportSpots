@@ -1,7 +1,7 @@
 import React from 'react';
-import { OpenGymInst } from "../OpenGymInst";
-import Conestoga from "./images/conestoga.jpg"; 
-import CharlesJordanCC from "./images/CharlesJordanCC.jpg";
+import { OpenGymInst } from "../../OpenGymInst";
+import Conestoga from "../images/conestoga.jpg"; 
+import CharlesJordanCC from "../images/CharlesJordanCC.jpg";
 
 export default class Wednesday extends React.Component {
     render() {

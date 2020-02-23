@@ -1,5 +1,5 @@
 import React from 'react';
-import { OpenGymInst } from "../OpenGymInst";
+import { OpenGymInst } from "../../OpenGymInst";
 
 export default class Friday extends React.Component {
     render() {
