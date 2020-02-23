@@ -1,8 +1,8 @@
 import React from 'react';
-import { OpenGymInst } from "../OpenGymInst";
-import SWCommunityCenter from "./images/SWCommunityCenter.jpg"; 
-import LakeGroveElementary from "./images/LakeGroveElementary.jpg"; 
-import AtheyCreekMiddleSchool from "./images/AtheyCreekMiddleSchool.jpg"; 
+import { OpenGymInst } from "../../OpenGymInst";
+import SWCommunityCenter from "../images/SWCommunityCenter.jpg"; 
+import LakeGroveElementary from "../images/LakeGroveElementary.jpg"; 
+import AtheyCreekMiddleSchool from "../images/AtheyCreekMiddleSchool.jpg"; 
 
 export default class Tuesday extends React.Component {
     render() {

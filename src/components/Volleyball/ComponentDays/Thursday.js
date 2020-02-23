@@ -1,9 +1,9 @@
 import React from 'react';
-import { OpenGymInst } from "../OpenGymInst";
-import SWCommunityCenter from "./images/SWCommunityCenter.jpg"; 
-import SellwoodCommunityHouse from "./images/SellwoodCommunityHouse.png"; 
-import HillsideCommunityCenter from "./images/HillsideCommunityCenter.jpg"; 
-import EPCC from "./images/epcc.jpg"; 
+import { OpenGymInst } from "../../OpenGymInst";
+import SWCommunityCenter from "../images/SWCommunityCenter.jpg"; 
+import SellwoodCommunityHouse from "../images/SellwoodCommunityHouse.png"; 
+import HillsideCommunityCenter from "../images/HillsideCommunityCenter.jpg"; 
+import EPCC from "../images/epcc.jpg"; 
 
 export default class Thursday extends React.Component {
     render() {

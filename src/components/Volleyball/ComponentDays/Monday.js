@@ -1,8 +1,8 @@
 import React from 'react';
-import { OpenGymInst } from "../OpenGymInst";
-import Conestoga from "./images/conestoga.jpg"; 
-import EPCC from "./images/epcc.jpg"; 
-import WillamettePrimarySchool from "./images/willamettePrimarySchool.png"; 
+import { OpenGymInst } from "../../OpenGymInst";
+import Conestoga from "../images/conestoga.jpg"; 
+import EPCC from "../images/epcc.jpg"; 
+import WillamettePrimarySchool from "../images/willamettePrimarySchool.png"; 
 
 export default class Monday extends React.Component {
     render() {
