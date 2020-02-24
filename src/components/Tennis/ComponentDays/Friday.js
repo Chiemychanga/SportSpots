@@ -3,6 +3,7 @@ import { OpenGymInst } from "../../OpenGymInst";
 import PortlandTennisCenter from "../images/PortlandTennisCenter.png"; 
 import StJohnsRacquetCenter from "../images/StJohnsRacquetCenter.jpg"; 
 import LakeOswegoTennisCenter from "../images/LakeOswegoTennisCenter.png"; 
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 export default class Monday extends React.Component {
     render() {
@@ -13,7 +14,6 @@ export default class Monday extends React.Component {
         return (
             <div className="gym-spots">
                 <h1>Tennis Spots Friday</h1>
-
                 {gyms.map(function (gym) {
                     return (
                         <div className="gym-info">

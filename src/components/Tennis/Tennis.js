@@ -99,7 +99,6 @@ export default class Tennis extends React.Component {
             </div>
           </nav>
           <br />
-          <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
         
           {this.getDisplay()}
           <SportFooter sport="Tennis" />
