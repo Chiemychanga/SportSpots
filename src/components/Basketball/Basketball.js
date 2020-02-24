@@ -1,117 +1,136 @@
 import React from "react";
 import "../css/content.css";
-import Footer from "../Footer.js";
-import Header from "../Header";
+import "./css/basketball.css";
+import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { OpenGymInst } from "../OpenGymInst";
-import { OpenGym } from "../../OpenGymInst";
 import basketballPicture from "../images/basketball.png";
+import Sunday from "./ComponentDays/Sunday";
+import Saturday from "./ComponentDays/Saturday";
+import Monday from "./ComponentDays/Monday";
+import Tuesday from "./ComponentDays/Tuesday";
+import Wednesday from "./ComponentDays/Wednesday";
+import Thursday from "./ComponentDays/Thursday";
+import Friday from "./ComponentDays/Friday";
 
-const openGyms = [
-  new OpenGymInst(
-    null,
-    "Mt. Scott Community Center",
-    "5530 Southeast 72nd Avenue",
-    null,
-    "Basketball",
-    "Sunday",
-    "2:30-4:30 PM",
-    "$0-$6.25",
-    "All Ages",
-    "https://www.portlandoregon.gov/parks/article/634572",
-    null,
-    null,
-    null,
-    null
-  ),
-  new OpenGymInst(
-    null,
-    "Mt. Scott Community Center",
-    "5530 Southeast 72nd Avenue",
-    null,
-    "Basketball",
-    "Tuesday",
-    "7:20-9:20 PM",
-    "$0-$6.25",
-    "Ages 18+ (ID Required)",
-    "https://www.portlandoregon.gov/parks/article/634572",
-    null,
-    null,
-    null,
-    null
-  ),
-  new OpenGymInst(
-    null,
-    "Mt. Scott Community Center",
-    "5530 Southeast 72nd Avenue",
-    null,
-    "Basketball",
-    "Thursday",
-    "7:20-9:20 PM",
-    "$0-$6.25",
-    "Ages 18+ (ID Required)",
-    "https://www.portlandoregon.gov/parks/article/634572",
-    null,
-    null,
-    null,
-    null
-  ),
-  new OpenGymInst(
-    null,
-    "Mt. Scott Community Center",
-    "5530 Southeast 72nd Avenue",
-    null,
-    "Basketball",
-    "Saturday",
-    "4:45-6:45 PM",
-    "$0-$6.25",
-    "Ages 30+ (ID Required)",
-    "https://www.portlandoregon.gov/parks/article/634572",
-    null,
-    null,
-    null,
-    null
-  ),
-  new OpenGymInst(
-    null,
-    "Mt. Scott Community Center",
-    "5530 Southeast 72nd Avenue",
-    null,
-    "Basketball",
-    "Sunday",
-    "4:45-6:45 PM",
-    "$0-$6.25",
-    "Ages 30+ (ID Required)",
-    "https://www.portlandoregon.gov/parks/article/634572",
-    null,
-    null,
-    null,
-    null
-  )
-];
 
 export default class Basketball extends React.Component {
+  state = {
+    dayOfWeek: ""
+  };
+
+  getDisplay() {
+    if(this.state.dayOfWeek === "Sunday") {
+      return <Sunday />
+    } else if(this.state.dayOfWeek === "Saturday") {
+      return <Saturday />
+    } else if(this.state.dayOfWeek === "Monday") {
+      return <Monday />
+    } else if(this.state.dayOfWeek === "Tuesday") {
+      return <Tuesday />
+    } else if(this.state.dayOfWeek === "Wednesday") {
+      return <Wednesday />
+    } else if(this.state.dayOfWeek === "Thursday") {
+      return <Thursday />
+    } else {
+      return <Friday />
+    }
+  }
+
   render() {
+    if (this.state.dayOfWeek === "") {
+      var d = new Date();
+      var weekday = new Array(7);
+      weekday[0] = "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+      this.setState({dayOfWeek: weekday[d.getDay()]});
+    }
+
     return (
       <div>
         <br />
-        <h1 className="align-center">Basketball</h1>
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div id="daysOfWeekNav" className="navbar-nav">
+              <a
+                className="nav-item nav-link SundayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Sunday"})}}
+                href="#"
+              >
+                Sunday
+              </a>
+              <a
+                className="nav-item nav-link MondayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Monday"})}}
+                href="#"
+              >
+                Monday
+              </a>
+              <a
+                className="nav-item nav-link TuesdayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Tuesday"})}}
+                href="#"
+              >
+                Tuesday
+              </a>
+              <a
+                className="nav-item nav-link WednesdayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Wednesday"})}}
+                href="#"
+              >
+                Wednesday
+              </a>
+              <a
+                className="nav-item nav-link ThursdayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Thursday"})}}
+                href="#"
+              >
+                Thursday
+              </a>
+              <a
+                className="nav-item nav-link FridayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Friday"})}}
+                href="#"
+              >
+                Friday
+              </a>
+              <a
+                className="nav-item nav-link SaturdayLink"
+                onClick={(e) => {this.setState({dayOfWeek: "Saturday"})}}
+                href="#"
+              >
+                Saturday
+              </a>
+            </div>
+          </div>
+        </nav>
+        <br />
+        <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
         <br />
         <img src={basketballPicture} alt="Athletes playing basketball" />
         <br />
         <br />
         <br />
-        {openGyms.map(function(gym) {
-          return (
-            <OpenGym
-              gymName={gym.getGymName()}
-              address={gym.getAddress()}
-              time={gym.getTime()}
-              cost={gym.getCost()}
-              description={gym.getLevelDescription()}
-            />
-          );
-        })}
+        <br />
+        <br />
+        {this.getDisplay()}
+        <SportFooter sport="Basketball" />
       </div>
     );
   }

@@ -4,8 +4,13 @@
 
 .gym-info {
     text-align: left;
+    word-wrap: break-word;
     padding: 20px;
     color: black;
     background-color: rgba(168, 166, 168, 0.5);
     margin: 10px;
+}
+
+.gym-info img {
+    width: 100%;
 }
