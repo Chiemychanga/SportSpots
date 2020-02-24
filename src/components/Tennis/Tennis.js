@@ -1,45 +1,34 @@
 import React from 'react';
 import "./css/tennis.css";
 import SportFooter from "../SportFooter.js";
-import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Sunday from "./ComponentDays/Sunday";
+import Saturday from "./ComponentDays/Saturday";
+import Monday from "./ComponentDays/Monday";
+import Tuesday from "./ComponentDays/Tuesday";
+import Wednesday from "./ComponentDays/Wednesday";
+import Thursday from "./ComponentDays/Thursday";
+import Friday from "./ComponentDays/Friday";
 
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export default class Tennis extends React.Component {
     state = {
         dayOfWeek: ""
     };
 
     getDisplay() {
-        if(this.state.dayOfWeek === "Sunday") {
-          return <Sunday />
-        } else if(this.state.dayOfWeek === "Saturday") {
-          return <Saturday />
-        } else if(this.state.dayOfWeek === "Monday") {
-          return <Monday />
-        } else if(this.state.dayOfWeek === "Tuesday") {
-          return <Tuesday />
-        } else if(this.state.dayOfWeek === "Wednesday") {
-          return <Wednesday />
-        } else if(this.state.dayOfWeek === "Thursday") {
-          return <Thursday />
-        } else {
-          return <Friday />
-        }
+        var components = [<Sunday />, <Monday />, <Tuesday />, <Wednesday />, <Thursday />, <Friday />, <Saturday />]
+        return components[days.indexOf(this.state.dayOfWeek)];
     }
+
     render() {
         if (this.state.dayOfWeek === "") {
-          var d = new Date();
-          var weekday = new Array(7);
-          weekday[0] = "Sunday";
-          weekday[1] = "Monday";
-          weekday[2] = "Tuesday";
-          weekday[3] = "Wednesday";
-          weekday[4] = "Thursday";
-          weekday[5] = "Friday";
-          weekday[6] = "Saturday";
-    
-          this.setState({dayOfWeek: weekday[d.getDay()]});
+            var now = new Date();
+            var components = [<Sunday />, <Monday />, <Tuesday />, <Wednesday />, <Thursday />, <Friday />, <Saturday />]
+            var numDay = now.getDay();
+            this.setState({ dayOfWeek: days[numDay] });
         }
+
         return (
         <div>
           <br />
