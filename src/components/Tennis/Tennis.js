@@ -9,6 +9,7 @@ import Tuesday from "./ComponentDays/Tuesday";
 import Wednesday from "./ComponentDays/Wednesday";
 import Thursday from "./ComponentDays/Thursday";
 import Friday from "./ComponentDays/Friday";
+import GMap from "./ComponentDays/GMap";
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export default class Tennis extends React.Component {
@@ -99,8 +100,9 @@ export default class Tennis extends React.Component {
             </div>
           </nav>
           <br />
-        
           {this.getDisplay()}
+          <br />
+          <GMap />
           <SportFooter sport="Tennis" />
         </div>
       );
