@@ -4,6 +4,7 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 class GMap extends React.Component {
     render() {
         return (
+          <div className="Mappie">
             <Map
             google={this.props.google}
             zoom={8}
@@ -11,6 +12,7 @@ class GMap extends React.Component {
           >
             <Marker position={{ lat: 48.00, lng: -122.00}} />
           </Map>
+          </div>
         );
     }
 };

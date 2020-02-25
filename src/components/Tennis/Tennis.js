@@ -99,10 +99,13 @@ export default class Tennis extends React.Component {
               </div>
             </div>
           </nav>
+          <div className="map">
+            Maps
+            <GMap />
+          </div>
           <br />
           {this.getDisplay()}
           <br />
-          <GMap />
           <SportFooter sport="Tennis" />
         </div>
       );
