@@ -48,3 +48,20 @@ Postgres DB, Oracle DB. I have been researching on Oracle DB so that's what I am
 I also added the sportFooter into my volleyball page. I wanted to get the days nav bar in volleyball below the header, but it's really confusing 
 how we can efficiently all use the same nav bar, but when clicking on it, leads to our own ComponentDays...
 
+Feb 23, 2020
+https://www.postgresqltutorial.com/
+
+Decided to use PostgresSQL as it's open-source and commonly used. I followed the tutorial link above.
+
+https://www.youtube.com/watch?v=xaWlS9HtWYw
+
+I watched that youtube video, installed Postico to test building a DB and table.
+
+Feb 24, 2020
+Met with teammates, decided that yes building a database would be nice but everything done statically and hardcoded works now. We will implement that down the road if we have time before the due date. 
+I finished adding all the gyms for every day of the week for volleyball.
+
+Now I'd like to work on adding the Google Calendar events on Monday, then to all of the days. 
+
+I'd like to eventually setup CI/CD : https://medium.com/peerigon/how-to-continuously-deploy-a-cra-using-github-actions-and-zeit-f7bbd3b60da3
+
