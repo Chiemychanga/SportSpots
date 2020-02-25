@@ -48,3 +48,12 @@ Postgres DB, Oracle DB. I have been researching on Oracle DB so that's what I am
 I also added the sportFooter into my volleyball page. I wanted to get the days nav bar in volleyball below the header, but it's really confusing 
 how we can efficiently all use the same nav bar, but when clicking on it, leads to our own ComponentDays...
 
+Feb 23, 2020
+https://www.postgresqltutorial.com/
+
+Decided to use PostgresSQL as it's open-source and commonly used. I followed the tutorial link above.
+
+https://www.youtube.com/watch?v=xaWlS9HtWYw
+
+I watched that youtube video, instaled Postico to test building a DB and table.
+
