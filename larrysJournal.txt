@@ -55,5 +55,13 @@ Decided to use PostgresSQL as it's open-source and commonly used. I followed the
 
 https://www.youtube.com/watch?v=xaWlS9HtWYw
 
-I watched that youtube video, instaled Postico to test building a DB and table.
+I watched that youtube video, installed Postico to test building a DB and table.
+
+Feb 24, 2020
+Met with teammates, decided that yes building a database would be nice but everything done statically and hardcoded works now. We will implement that down the road if we have time before the due date. 
+I finished adding all the gyms for every day of the week for volleyball.
+
+Now I'd like to work on adding the Google Calendar events on Monday, then to all of the days. 
+
+I'd like to eventually setup CI/CD : https://medium.com/peerigon/how-to-continuously-deploy-a-cra-using-github-actions-and-zeit-f7bbd3b60da3
 
