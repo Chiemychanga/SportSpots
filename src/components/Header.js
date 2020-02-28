@@ -1,19 +1,19 @@
 import React from "react";
 // import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { Media } from 'reactstrap';
 
 export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link to="/">
-            <a class="navbar-brand" href="#">
-              Sport Spots
-            </a>
+          <Media tag="a" className="navbar-brand" href="#">Sport Spots</Media>
+            {/* <a className="navbar-brand" href="#">Sport Spots</a> */}
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavDropdown"
@@ -21,27 +21,27 @@ export default class Header extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
               <Link to="/Basketball">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
                     Basketball
                   </a>
                 </li>
               </Link>
               <Link to="/Volleyball">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
                     Volleyball
                   </a>
                 </li>
               </Link>
               <Link to="/Tennis">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
                     Tennis
                   </a>
                 </li>
