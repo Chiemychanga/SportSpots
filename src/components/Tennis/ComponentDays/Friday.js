@@ -1,8 +1,8 @@
 import React from 'react';
 import { OpenGymInst } from "../../OpenGymInst";
-import PortlandTennisCenter from "../images/PortlandTennisCenter.png"; 
+import PortlandTennisCenter from "../images/portlandTennisCenter.png"; 
 import StJohnsRacquetCenter from "../images/StJohnsRacquetCenter.jpg"; 
-import LakeOswegoTennisCenter from "../images/LakeOswegoTennisCenter.png"; 
+import LakeOswegoTennisCenter from "../images/lakeOswegoTennisCenter.png"; 
 
 export default class Monday extends React.Component {
     render() {
