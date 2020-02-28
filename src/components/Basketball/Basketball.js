@@ -4,7 +4,7 @@ import "./css/basketball.css";
 import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import basketballPicture from "../images/basketball.png";
-import DayOfWeekNav from "./DayOfWeekNav";
+import DayOfWeekNav from "../DayOfWeekNav";
 import { OpenGym } from "../../OpenGymInst";
 import DisplayGyms from "./displayGyms";
 
