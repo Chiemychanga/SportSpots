@@ -29,19 +29,19 @@ export default class SportFooter extends React.Component {
             <div id="secondFooterColumn" class="col-3">
               <h5>{this.props.sport} By Day</h5>
               <br />
-              <a href="#">Sunday</a>
+              <a href="#" onClick={e => this.props.handleClick("Sunday")}>Sunday</a>
               <br />
-              <a href="#">Monday</a>
+              <a href="#" onClick={e => this.props.handleClick("Monday")}>Monday</a>
               <br />
-              <a href="#">Tuesday</a>
+              <a href="#" onClick={e => this.props.handleClick("Tuesday")}>Tuesday</a>
               <br />
-              <a href="#">Wednesday</a>
+              <a href="#" onClick={e => this.props.handleClick("Wednesday")}>Wendnesday</a>
               <br />
-              <a href="#">Thursday</a>
+              <a href="#" onClick={e => this.props.handleClick("Thursday")}>Thursday</a>
               <br />
-              <a href="#">Friday</a>
+              <a href="#" onClick={e => this.props.handleClick("Friday")}>Friday</a>
               <br />
-              <a href="#">Saturday</a>
+              <a href="#" onClick={e => this.props.handleClick("Saturday")}>Saturday</a>
             </div>
             <div id="secondFooterColumn" className="col-3">
               <h5>Sports</h5>
