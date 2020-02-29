@@ -3,7 +3,6 @@ import "../css/content.css";
 import "./css/basketball.css";
 import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import basketballPicture from "../images/basketball.png";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
 import "../css/content.css";
@@ -38,10 +37,6 @@ export default class Basketball extends React.Component {
         <DayOfWeekNav handleClick={this.handleClick}/>
         <br />
         <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
-        <br />
-        <img src={basketballPicture} alt="Athletes playing basketball" />
-        <br />
-        <br />
         <br />
         <br />
         <div className="gym-spots">
