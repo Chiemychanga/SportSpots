@@ -1,9 +1,10 @@
 import { OpenGymInst } from "../OpenGymInst";
+import MtScottCommunityCenter from "../Volleyball/images/MtScottCommunityCenter.jpg"; 
 
 const gyms = [
     //Sunday gyms
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
     null,
@@ -35,7 +36,7 @@ const gyms = [
     null
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
     null,
@@ -151,7 +152,7 @@ const gyms = [
     null
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
     null,
@@ -251,7 +252,7 @@ const gyms = [
     null
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
     null,
@@ -335,7 +336,7 @@ const gyms = [
     null
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
     null,
