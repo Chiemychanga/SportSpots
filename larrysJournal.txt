@@ -63,5 +63,11 @@ I finished adding all the gyms for every day of the week for volleyball.
 
 Now I'd like to work on adding the Google Calendar events on Monday, then to all of the days. 
 
-I'd like to eventually setup CI/CD : https://medium.com/peerigon/how-to-continuously-deploy-a-cra-using-github-actions-and-zeit-f7bbd3b60da3
+TODO: I'd like to eventually setup CI/CD : https://medium.com/peerigon/how-to-continuously-deploy-a-cra-using-github-actions-and-zeit-f7bbd3b60da3
 
+Google calendar API Key: 
+AIzaSyCFWZePysOh72THT-SOCnplMtKYTFQ4vRs
+
+Feb 27, 2020
+Been very busy with other work and catching up on class slides. Need to fix an error with our homepage being blank unless we click on something from then
+navbar. 

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -8,7 +7,6 @@ import Volleyball from "./components/Volleyball/Volleyball";
 import Tennis from "./components/Tennis/Tennis";
 import Basketball from "./components/Basketball/Basketball";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { OpenGymInst } from "./components/OpenGymInst";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
