@@ -5,8 +5,8 @@ import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import basketballPicture from "../images/basketball.png";
 import DayOfWeekNav from "../DayOfWeekNav";
-import { OpenGym } from "../../OpenGymInst";
 import DisplayGyms from "./displayGyms";
+import "../css/content.css";
 
 export default class Basketball extends React.Component {
   constructor() {
@@ -44,7 +44,9 @@ export default class Basketball extends React.Component {
         <br />
         <br />
         <br />
-        <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
+        <div className="gym-spots">
+          <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
+        </div>
         <br />
         <SportFooter sport="Basketball" handleClick={this.handleClick}/>
       </div>
