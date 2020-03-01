@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import basketballPicture from "../images/basketball.png";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
-import "../css/content.css";
 
 export default class Basketball extends React.Component {
   constructor() {

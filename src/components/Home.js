@@ -9,19 +9,19 @@ import Footer from "./Footer";
 export default class Home extends React.Component {
     render() {
         return (
-            <div class="home">
+            <div className="home">
                 <h1>Home</h1>
-                <div class="container">
-                    <div class="box">                    
+                <div className="container">
+                    <div className="box">                    
                         <img src={portal1} alt="volleyball-portal"/><br></br>
                     </div>
-                    <div class="box">                  
+                    <div className="box">                  
                         <img src={portal2} alt="basketball-portal"/><br></br>
                     </div>
-                    <div class="box">                  
+                    <div className="box">                  
                         <img src={portal3} alt="tennis-portal"/><br></br>
                     </div>
-                    <div class="box">                  
+                    <div className="box">                  
                         <img src={portal4} alt="soccer-portal"/><br></br>
                     </div>
                 </div>
