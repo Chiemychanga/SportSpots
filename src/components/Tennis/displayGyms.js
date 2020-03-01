@@ -4,8 +4,8 @@ import { OpenGym } from "./OpenGymInst";
 
 export default class DisplayGyms extends React.Component {
   render() {
-    const newGymArray = gymsArray.filter( 
-      gym => gym.dayOfWeek.includes(this.props.dayOfWeek)
+    const newGymArray = gymsArray.filter(  // this takes in all the gyms arrays for tennis
+      gym => gym.dayOfWeek.includes(this.props.dayOfWeek) //This filters them all out by day
     );
     return (
       <div>
