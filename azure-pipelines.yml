@@ -5,9 +5,6 @@
 
 trigger:
 - master
-- volleyball
-- basketball
-- tennis
 
 pool:
   vmImage: 'ubuntu-latest'
