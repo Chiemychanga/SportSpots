@@ -1,6 +1,6 @@
 import React from 'react';
 import { OpenGymInst } from "../../OpenGymInst";
-import PortlandTennisCenter from "../images/PortlandTennisCenter.png"; 
+import PortlandTennisCenter from "../images/PortlandTennisCenter.png";
 import StJohnsRacquetCenter from "../images/StJohnsRacquetCenter.jpg"; 
 import LakeOswegoTennisCenter from "../images/LakeOswegoTennisCenter.png"; 
 

@@ -71,3 +71,14 @@ AIzaSyCFWZePysOh72THT-SOCnplMtKYTFQ4vRs
 Feb 27, 2020
 Been very busy with other work and catching up on class slides. Need to fix an error with our homepage being blank unless we click on something from then
 navbar. 
+
+Feb 28, 2020
+Fixed a bad merge which messed up the homepage due to gh-pages functionality...Need to figure out how to deploy to gh-pages successfully.
+
+Feb 29, 2020
+Merged Joseph's code and how he simplified our weekday components into 7 different day components into 1. Nice job.
+
+Lot of work with fixing the css styling, which required using flex box instead of <br/> tags everywhere. 
+
+Also, worked on removing the errors and some warnings on the console. 
+

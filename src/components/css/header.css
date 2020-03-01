@@ -1,0 +1,9 @@
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar-nav > li {
+    margin: 5px;
+}
