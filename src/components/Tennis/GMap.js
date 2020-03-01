@@ -5,13 +5,14 @@ import "./css/tennis.css";
 class GMap extends React.Component {
     render() {
         return (
-          <div className="Mappie">
+          <div className="mapDisplay">
             <Map
             google={this.props.google}
             zoom={8}
             initialCenter={{ lat: 47.444, lng: -122.176}}
             >
-            <Marker position={{ lat: 48.00, lng: -122.00}} />
+            <Marker position={{ lat: 48.00, lng: -122.00}} label = {"A"} />
+            <Marker position={{ lat: 47.00, lng: -122.176}} label = {"B"}/>
             </Map>
           </div>
         );

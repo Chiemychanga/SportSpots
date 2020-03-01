@@ -12,3 +12,11 @@
     background-color: rgba(168, 166, 168, 0.5);
     margin: 10px;
   }
+
+div.mapDisplay{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  width: 48%;
+}
