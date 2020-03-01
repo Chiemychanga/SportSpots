@@ -5,7 +5,7 @@ import { OpenGym } from "./OpenGymInst";
 export default class DisplayGyms extends React.Component {
   render() {
     const newGymArray = gymsArray.filter(
-      gym => gym.dayOfWeek === this.props.dayOfWeek
+      gym => gym.dayOfWeek.includes(this.props.dayOfWeek)
     );
     return (
       <div>
