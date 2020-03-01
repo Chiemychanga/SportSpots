@@ -16,8 +16,6 @@ export class OpenGym extends React.Component {
         <li><b>Number of Courts:</b> {this.props.gym.getNumberOfCourts()}</li>
         <li><b>Court Type:</b> {this.props.gym.getCourtType()}</li>
         <li><b>Minimum Age:</b> {this.props.gym.getMinimumAge()}</li>
-        <li><b>Latitude: </b> {this.props.gym.getLat()}</li>
-        <li><b>Longitude: </b> {this.props.gym.getLong()}</li>
       </div>
     );
   }

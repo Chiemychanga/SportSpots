@@ -10,18 +10,40 @@ class GMap extends React.Component {
       );
         return (
           <div className="mapDisplay">
+            {console.log(gymsArray.length)}
+            {console.log(gymsArray[0].lat)}
             <Map
             google={this.props.google}
-            zoom={8}
-            initialCenter={{ lat: 45.42, lng: -122.706}}
+            zoom={11}
+            initialCenter={{ lat: centerCalcLat(gymsArray), lng: centerCalcLong(gymsArray)}}
             >
-              <Marker position={{lat: 45.42, lng: -122.706}} label = {"A"} />
+              <Marker position={{lat: gymsArray[0].lat, lng: gymsArray[3].long}} label = {"A"} />
+              <Marker position={{lat: gymsArray[2].lat, lng: gymsArray[0].long}} label = {"B"} />
+              <Marker position={{lat: gymsArray[4].lat, lng: gymsArray[0].long}} label = {"C"} />
             </Map>
           </div>
         );
     }
 };
 
+function centerCalcLat(openGymInstance){
+  let average = 0;
+  for (let i = 0; i < openGymInstance.length; i++){
+    average = average + parseFloat(openGymInstance[i].lat);
+    //console.log(average);
+  }
+  average = (average / openGymInstance.length);
+  return average;
+}
+
+function centerCalcLong(openGymInstance){
+  let average = 0;
+  for (let i = 0; i < openGymInstance.length; i++){
+    average = average + parseFloat(openGymInstance[i].long);
+  }
+  average = (average / openGymInstance.length);
+  return average;
+}
 export default GoogleApiWrapper({
     apiKey: 'AIzaSyBDSChLvqBMtpqq0W5WFUKMFmKrZtoICQs'
    })(GMap);
