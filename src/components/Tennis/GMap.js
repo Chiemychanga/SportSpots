@@ -8,18 +8,21 @@ class GMap extends React.Component {
       const newGymArray = gymsArray.filter(  // this takes in all the gyms arrays for tennis
         gym => gym.dayOfWeek.includes(this.props.dayOfWeek) //This filters them all out by day
       );
+      {console.log(gymsArray.length)};
+      {console.log(newGymArray.length)};
         return (
           <div className="mapDisplay">
-            {console.log(gymsArray.length)}
-            {console.log(gymsArray[0].lat)}
+            {console.log(newGymArray)}
+
             <Map
             google={this.props.google}
             zoom={11}
             initialCenter={{ lat: centerCalcLat(gymsArray), lng: centerCalcLong(gymsArray)}}
             >
-              <Marker position={{lat: gymsArray[0].lat, lng: gymsArray[0].long}} label = {gymsArray[0].gymName} />
-              <Marker position={{lat: gymsArray[2].lat, lng: gymsArray[2].long}} label = {gymsArray[2].gymName} />
-              <Marker position={{lat: gymsArray[4].lat, lng: gymsArray[4].long}} label = {gymsArray[4].gymName} />
+
+            {newGymArray.map(function(gym, i) {
+              return <Marker gym={gym} key={i} position={{lat: gym.lat, lng: gym.long}} label={gym.gymName}/>;
+            })}
             </Map>
           </div>
         );

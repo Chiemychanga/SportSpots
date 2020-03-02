@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
           <div className="row">
             <div id="firstFooterColumn" className="col-8">
               <h4>
-                Know of an open gym? <a href="#">Contact us!</a>
+                Know of an open gym? <Link to="/Form"> Contact Us!</Link>
               </h4>
               <p>
                 If you facilitate and/or know of an open gym that you would like

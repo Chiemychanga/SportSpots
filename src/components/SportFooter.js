@@ -12,7 +12,7 @@ export default class SportFooter extends React.Component {
           <div className="row">
             <div id="firstFooterColumn" className="col-6">
               <h4>
-                Know of an open gym? <a href="#">Contact us!</a>
+                Know of an open gym? <Link to="/Form"> Contact Us!</Link>
               </h4>
               <br />
               <p>

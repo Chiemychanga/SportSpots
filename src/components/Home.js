@@ -26,7 +26,7 @@ export default class Home extends React.Component {
                         <img src={portal4} alt="soccer-portal"/><br></br>
                     </div>
                 </div>
-                <Footer />
+                <Footer/>
             </div>
         )
     }
