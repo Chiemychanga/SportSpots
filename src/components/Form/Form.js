@@ -1,11 +1,11 @@
 import React from 'react';
 import "../css/content.css";
+import "./css/Form.css";
 import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DayOfWeekNav from "../DayOfWeekNav";
-import DisplayGyms from "./displayGyms";
 
-export default class Volleyball extends React.Component {
+export default class Form extends React.Component {
     constructor() {
         super();
         var today = new Date();
@@ -24,15 +24,18 @@ export default class Volleyball extends React.Component {
     render() {
         return (
             <div>
-                <br />
-                <DayOfWeekNav handleClick={this.handleClick} />
-                <br />
-                <h1 className="align-center">{this.state.dayOfWeek} Volleyball</h1>
-                <div className="gym-spots">
-                    <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
-                </div>
-                <br />
-                <SportFooter sport="Volleyball" handleClick={this.handleClick} />
+
+                <h1 className="align-center">Contact Form</h1>
+                
+                <form action="/submit" method='POST'>
+                <label for="fname">First name:</label><br/>
+                <input type="text" id="fname" name="fname"></input><br/>
+                <label for="lname">Last name:</label><br/>
+                <input type="text" id="lname" name="lname"
+                ></input><br/><br/>
+                <input type="submit" value="Submit"></input>
+                </form> 
+
             </div>
         );
     }

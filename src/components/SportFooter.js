@@ -12,7 +12,7 @@ export default class SportFooter extends React.Component {
           <div className="row">
             <div id="firstFooterColumn" className="col-6">
               <h4>
-                Know of an open gym? <a href="#">Contact us!</a>
+                Know of an open gym? <Link to="/Form"> Contact Us!</Link>
               </h4>
               <br />
               <p>
@@ -26,38 +26,21 @@ export default class SportFooter extends React.Component {
                 &copy; 2020 Sport Spots. All rights reserved.
               </p>
             </div>
-            <div id="secondFooterColumn" class="col-3">
+            <div className="col-3 secondFooterColumn">
               <h5>{this.props.sport} By Day</h5>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Sunday")}>Sunday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Monday")}>Monday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Tuesday")}>Tuesday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Wednesday")}>Wendnesday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Thursday")}>Thursday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Friday")}>Friday</a>
-              <br />
               <a href="#" onClick={e => this.props.handleClick("Saturday")}>Saturday</a>
             </div>
-            <div id="secondFooterColumn" className="col-3">
+            <div className="col-3 secondFooterColumn">
               <h5>Sports</h5>
-              <br />
-              <Link to="/Volleyball">
-                <a href="#">Volleyball</a>
-                <br />
-              </Link>
-              <Link to="/Basketball">
-                <a href="#">Basketball</a>
-              </Link>
-              <br />
-              <Link to="/Tennis">
-                <a href="#">Tennis</a>
-                <br />
-              </Link>
+              <Link to="/Volleyball">Volleyball</Link>
+              <Link to="/Basketball">Basketball</Link>
+              <Link to="/Tennis">Tennis</Link>
             </div>
           </div>
         </div>

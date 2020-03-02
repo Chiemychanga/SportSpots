@@ -5,7 +5,6 @@ import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
-import "../css/content.css";
 
 export default class Basketball extends React.Component {
   constructor() {

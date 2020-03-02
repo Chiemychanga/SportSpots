@@ -1,17 +1,13 @@
 import React from "react";
-// import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { Media } from 'reactstrap';
+import "./css/header.css"
 
 export default class Header extends React.Component {
   render() {
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link to="/">
-          <Media tag="a" className="navbar-brand" href="#">Sport Spots</Media>
-            {/* <a className="navbar-brand" href="#">Sport Spots</a> */}
-          </Link>
+          <a className="navbar-brand"><Link to="/">Sport Spots</Link></a>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,27 +21,9 @@ export default class Header extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <Link to="/Basketball">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Basketball
-                  </a>
-                </li>
-              </Link>
-              <Link to="/Volleyball">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Volleyball
-                  </a>
-                </li>
-              </Link>
-              <Link to="/Tennis">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Tennis
-                  </a>
-                </li>
-              </Link>
+              <li className="nav-item"><Link to="/Basketball">Basketball</Link></li>
+              <li className="nav-item"><Link to="/Volleyball">Volleyball</Link></li>
+              <li className="nav-item"><Link to="/Tennis">Tennis</Link></li>
             </ul>
           </div>
         </nav>
