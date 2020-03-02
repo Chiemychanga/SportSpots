@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import gymsArray from "./gymsArray";// this is how we will get our gym data
 import "./css/tennis.css";
 
@@ -17,9 +17,9 @@ class GMap extends React.Component {
             zoom={11}
             initialCenter={{ lat: centerCalcLat(gymsArray), lng: centerCalcLong(gymsArray)}}
             >
-              <Marker position={{lat: gymsArray[0].lat, lng: gymsArray[3].long}} label = {"A"} />
-              <Marker position={{lat: gymsArray[2].lat, lng: gymsArray[0].long}} label = {"B"} />
-              <Marker position={{lat: gymsArray[4].lat, lng: gymsArray[0].long}} label = {"C"} />
+              <Marker position={{lat: gymsArray[0].lat, lng: gymsArray[0].long}} label = {gymsArray[0].gymName} />
+              <Marker position={{lat: gymsArray[2].lat, lng: gymsArray[2].long}} label = {gymsArray[2].gymName} />
+              <Marker position={{lat: gymsArray[4].lat, lng: gymsArray[4].long}} label = {gymsArray[4].gymName} />
             </Map>
           </div>
         );
