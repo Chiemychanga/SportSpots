@@ -4,10 +4,10 @@ flex-wrap: wrap;
 flex-direction: row;
 }
 
-.box{
+div.box{
 padding: 0px;
 width: 400px;
-height: 300px;
+height: 400px;
 background-color: transparent;
 margin: 20px;
 }

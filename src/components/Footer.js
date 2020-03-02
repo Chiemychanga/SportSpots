@@ -11,16 +11,14 @@ export default class Footer extends React.Component {
           <div className="row">
             <div id="firstFooterColumn" className="col-8">
               <h4>
-                Know of an open gym? <a href="#">Contact us!</a>
+                Know of an open gym? <Link to="/Form"> Contact Us!</Link>
               </h4>
-              <br />
               <p>
                 If you facilitate and/or know of an open gym that you would like
                 to suggest, send us an email! Please ensure to include
                 information including location, name of the gym, cost to play,
                 and competition level.
               </p>
-              <br />
               <p className="align-center">
                 &copy; 2020 Sport Spots. All rights reserved.
               </p>
@@ -33,7 +31,6 @@ export default class Footer extends React.Component {
             </div>
           </div>
         </div>
-        <br />
       </footer>
     );
   }
