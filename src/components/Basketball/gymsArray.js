@@ -1,12 +1,13 @@
 import { OpenGymInst } from "../OpenGymInst";
+import MtScottCommunityCenter from "../Volleyball/images/MtScottCommunityCenter.jpg"; 
 
 const gyms = [
     //Sunday gyms
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
-    null,
+    "https://goo.gl/maps/nkSMG4WZHsDnUrH88",
     "Basketball",
     "Sunday",
     "2:30 - 4:30 PM",
@@ -16,13 +17,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.482404",
+    "-122.5906866",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Sunday",
     "3:30 - 5:30 PM",
@@ -32,13 +35,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
-    null,
+    "https://goo.gl/maps/nkSMG4WZHsDnUrH88",
     "Basketball",
     "Sunday",
     "4:45 - 6:45 PM",
@@ -48,7 +53,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.482404",
+    "-122.5906866",
   ),
 
   //Monday Gyms
@@ -56,7 +63,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Monday",
     "6:00 - 8:00 AM",
@@ -66,13 +73,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Monday",
     "2:45 - 5:00 PM",
@@ -82,13 +91,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Monday",
     "6:00 - 8:00 PM",
@@ -98,7 +109,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
 
   //Tuesday gyms
@@ -106,7 +119,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Tuesday",
     "6:00 - 8:00 AM",
@@ -116,13 +129,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Tuesday",
     "8:00 - 10:00 AM",
@@ -132,13 +147,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Tuesday",
     "2:45 - 5:00 PM",
@@ -148,13 +165,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
-    null,
+    "https://goo.gl/maps/nkSMG4WZHsDnUrH88",
     "Basketball",
     "Tuesday",
     "7:20 - 9:20 PM",
@@ -164,7 +183,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.482404",
+    "-122.5906866",
   ),
 
   //Wednesday gyms
@@ -172,7 +193,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Wednesday",
     "6:00 - 8:00 AM",
@@ -182,13 +203,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Wednesday",
     "2:45 - 5:00 PM",
@@ -198,7 +221,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
 
   //Thursday gyms
@@ -206,7 +231,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Thursday",
     "6:00 - 8:00 AM",
@@ -216,13 +241,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Thursday",
     "8:00 - 10:00 AM",
@@ -232,13 +259,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Thursday",
     "2:45 - 5:00 PM",
@@ -248,13 +277,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
-    null,
+    "https://goo.gl/maps/nkSMG4WZHsDnUrH88",
     "Basketball",
     "Thursday",
     "7:20 - 9:20 PM",
@@ -264,7 +295,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.482404",
+    "-122.5906866",
   ),
 
   //Friday gyms
@@ -272,7 +305,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Friday",
     "6:00 - 8:00 AM",
@@ -282,13 +315,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Friday",
     "2:45 - 5:00 PM",
@@ -298,13 +333,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Friday",
     "6:00 - 9:00 PM",
@@ -314,7 +351,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   
   //Saturday gyms
@@ -322,7 +361,7 @@ const gyms = [
     null,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
-    null,
+    "https://goo.gl/maps/rFRJseEathXkB9XT6",
     "Basketball",
     "Saturday",
     "3:30 - 5:30 PM",
@@ -332,13 +371,15 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.516171",
+    "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    MtScottCommunityCenter,
     "Mt. Scott Community Center",
     "5530 Southeast 72nd Avenue",
-    null,
+    "https://goo.gl/maps/nkSMG4WZHsDnUrH88",
     "Basketball",
     "Saturday",
     "4:45 - 6:45 PM",
@@ -348,7 +389,9 @@ const gyms = [
     null,
     null,
     null,
-    null
+    null,
+    "45.482404",
+    "-122.5906866",
   ),
 ];
 

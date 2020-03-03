@@ -3,9 +3,10 @@ import "../css/content.css";
 import "./css/basketball.css";
 import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import basketballPicture from "../images/basketball.png";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
+import gyms from "./gymsArray";
+import GMAP from "../GMap";
 
 export default class Basketball extends React.Component {
   constructor() {
@@ -38,11 +39,8 @@ export default class Basketball extends React.Component {
         <br />
         <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
         <br />
-        <img src={basketballPicture} alt="Athletes playing basketball" />
         <br />
-        <br />
-        <br />
-        <br />
+        <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
         <div className="gym-spots">
           <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
         </div>
