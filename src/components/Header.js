@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand"><Link to="/">Sport Spots</Link></a>
+          <Link to="/" className="navbar-brand">Sport Spots</Link>
           <button
             className="navbar-toggler"
             type="button"

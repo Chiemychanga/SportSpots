@@ -5,12 +5,18 @@
 .gym-info {
     text-align: left;
     word-wrap: break-word;
+    width: 60%;
     padding: 20px;
     color: black;
     background-color: rgba(168, 166, 168, 0.5);
-    margin: 10px;
+    margin: 20px auto;
 }
 
 .gym-info img {
     width: 100%;
+}
+
+.google-calendar {
+    border:solid 1px #777;
+    margin: 20px auto;
 }
