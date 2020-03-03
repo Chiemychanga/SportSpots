@@ -5,6 +5,8 @@ import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
+import gyms from "./gymsArray";
+import GMAP from "../GMap";
 
 export default class Basketball extends React.Component {
   constructor() {
@@ -38,6 +40,7 @@ export default class Basketball extends React.Component {
         <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
         <br />
         <br />
+        <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
         <div className="gym-spots">
           <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
         </div>
