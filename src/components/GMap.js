@@ -9,8 +9,6 @@ class GMap extends React.Component {
       );
         return (
           <div className="mapDisplay">
-            {console.log(newGymArray)}
-
             <Map
             google={this.props.google}
             zoom={11}
