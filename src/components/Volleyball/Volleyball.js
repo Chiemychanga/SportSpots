@@ -4,6 +4,8 @@ import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
+import gyms from "./gymsArray";
+import GMAP from "../GMap";
 
 export default class Volleyball extends React.Component {
     constructor() {
@@ -28,10 +30,10 @@ export default class Volleyball extends React.Component {
                 <DayOfWeekNav handleClick={this.handleClick} />
                 <br />
                 <h1 className="align-center">{this.state.dayOfWeek} Volleyball</h1>
+                <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
                 <div className="gym-spots">
                     <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
                 </div>
-                <br />
                 <SportFooter sport="Volleyball" handleClick={this.handleClick} />
             </div>
         );
