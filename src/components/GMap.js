@@ -1,15 +1,12 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
-import gymsArray from "./gymsArray";// this is how we will get our gym data
-import "./css/tennis.css";
+import "./Tennis/css/tennis.css";
 
 class GMap extends React.Component {
     render() {
-      const newGymArray = gymsArray.filter(  // this takes in all the gyms arrays for tennis
+      const newGymArray = this.props.gymsArray.filter(  // this takes in all the gyms arrays for tennis
         gym => gym.dayOfWeek.includes(this.props.dayOfWeek) //This filters them all out by day
       );
-      {console.log(gymsArray.length)};
-      {console.log(newGymArray.length)};
         return (
           <div className="mapDisplay">
             {console.log(newGymArray)}
@@ -17,7 +14,7 @@ class GMap extends React.Component {
             <Map
             google={this.props.google}
             zoom={11}
-            initialCenter={{ lat: centerCalcLat(gymsArray), lng: centerCalcLong(gymsArray)}}
+            initialCenter={{ lat: centerCalcLat(newGymArray), lng: centerCalcLong(newGymArray)}}
             >
 
             {newGymArray.map(function(gym, i) {
