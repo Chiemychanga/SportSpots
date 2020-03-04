@@ -4,6 +4,9 @@ import SportFooter from "../SportFooter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
+import gyms from "./gymsArray";
+import GMAP from "../GMap";
+import Iframe from 'react-iframe'
 
 export default class Volleyball extends React.Component {
     constructor() {
@@ -24,14 +27,18 @@ export default class Volleyball extends React.Component {
     render() {
         return (
             <div>
-                <br />
                 <DayOfWeekNav handleClick={this.handleClick} />
-                <br />
                 <h1 className="align-center">{this.state.dayOfWeek} Volleyball</h1>
+                <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
                 <div className="gym-spots">
                     <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
                 </div>
-                <br />
+                <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bXQ3Z3ExdDczZGZ2dHFqaTh1dGlyZ242MzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E"
+                    className="google-calendar"
+                    width="800"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no" />
                 <SportFooter sport="Volleyball" handleClick={this.handleClick} />
             </div>
         );

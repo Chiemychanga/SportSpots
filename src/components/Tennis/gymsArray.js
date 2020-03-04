@@ -1,7 +1,7 @@
 import { OpenGymInst } from "../OpenGymInst";
-import PortlandTennisCenter from "./images/PortlandTennisCenter.png"; 
+import PortlandTennisCenter from "./images/PortlandTennisCenter.jpg";
 import StJohnsRacquetCenter from "./images/StJohnsRacquetCenter.jpg"; 
-import LakeOswegoTennisCenter from "./images/LakeOswegoTennisCenter.png"; 
+import LakeOswegoTennisCenter from "./images/LakeOswegoTennisCenter.jpeg";
 
 const gyms = [
       //mon - fri

@@ -82,3 +82,12 @@ Lot of work with fixing the css styling, which required using flex box instead o
 
 Also, worked on removing the errors and some warnings on the console. 
 
+Mar 1, 2020
+Met with Daniel at Starbucks to merge code and work on getting his code up to date on tennis pages to match ours.
+
+Mar 2, 2020
+Added latitude and longitude in Volleyball gyms and got google maps api working on volleyball pages.
+
+Now working on Google Calendar API following this document: https://www.sivadass.in/using-google-calendar-api-with-react-js/
+
+
