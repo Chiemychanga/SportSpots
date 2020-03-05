@@ -60,7 +60,7 @@ export default class Form extends React.Component {
     handleSubmit(event){
         event.preventDefault(); //If it is a cancelable it will cancel it
 
-        fetch('http://localahost:3002/send',{//I think it was /submit for the hw5 though also axios can be used aswell
+        fetch('http://localahost:3000/send',{//I think it was /submit for the hw5 though also axios can be used aswell
             method: "POST",
             body: JSON.stringify(this.state), //converting to json string
             headers: {
