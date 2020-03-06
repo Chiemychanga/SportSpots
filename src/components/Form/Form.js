@@ -21,9 +21,9 @@ export default class Form extends React.Component {
             levelDescription: '',
             website: '',
             description: '',
-            numberOfCourts: '',
-            courtType: '',
-            minimumAge: ''
+            numberOfCourts: '1',
+            courtType: 'indoor',
+            minimumAge: 'none'
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -178,17 +178,39 @@ export default class Form extends React.Component {
 
                     <div className="form-group">
                         <label htmlFor="number-of-courts">Number Of Courts</label>
-                        <input type="text" className="form-control" value={this.state.numberOfCourts} onChange={this.onNumberOfCourtsChange.bind(this)}/>
+                        <select numberOfCourts={this.state.numberOfCourts} onChange={this.onNumberOfCourtsChange.bind(this)}>
+                            <option numberOfCourts='1'>1</option>
+                            <option numberOfCourts='2'>2</option>
+                            <option numberOfCourts='3'>3</option>
+                            <option numberOfCourts='4'>4</option>
+                            <option numberOfCourts='5'>5</option>
+                            <option numberOfCourts='6'>6</option>
+                            <option numberOfCourts='7'>7</option>
+                            <option numberOfCourts='8'>8</option>
+                            <option numberOfCourts='9'>9</option>
+                            <option numberOfCourts='10+'>10+</option>
+                        </select>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="court-type">Court Type</label>
-                        <input type="text" className="form-control" value={this.state.courtType} onChange={this.onCourtTypeChange.bind(this)}/>
+
+                        <select courtType={this.state.courtType} onChange={this.onCourtTypeChange.bind(this)}>
+                            <option courtType='indoor'>Indoor</option>
+                            <option courtType='outdoor'>Outdoor</option>
+                            <option courtType='N/A'>N/A</option>
+                        </select>
                     </div>
-                    
+
                     <div className="form-group">
                         <label htmlFor="min-age">Minimum Age</label>
-                        <input type="text" className="form-control" value={this.state.minimumAge} onChange={this.onMinimumAgeChange.bind(this)}/>
+                        <select minimumAge={this.state.minimumAge} onChange={this.onMinimumAgeChange.bind(this)}>
+                            <option minimumAge='none'>None</option>
+                            <option minimumAge='6 to 10'>6 to 10</option>
+                            <option minimumAge='11+'>12+</option>
+                            <option minimumAge='18+'>18+</option>
+                            <option minimumAge='21+'>21+</option>
+                        </select>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Submit</button>
@@ -226,9 +248,9 @@ export default class Form extends React.Component {
             levelDescription: '',
             website: '',
             description: '',
-            numberOfCourts: '',
-            courtType: '',
-            minimumAge: ''
+            numberOfCourts: '1',
+            courtType: 'indoor',
+            minimumAge: 'None'
         })
     }
 }
