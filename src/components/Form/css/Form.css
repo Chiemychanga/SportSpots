@@ -4,6 +4,14 @@ div.form-title{
     margin-bottom: 5px;
 }
 
-div.form-group{
-    align-content: left !important;
+div.form-body{
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+div.form-group-row{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

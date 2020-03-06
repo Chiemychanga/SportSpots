@@ -92,15 +92,18 @@ export default class Form extends React.Component {
     onMinimumAgeChange(event){
         this.setState({minimumAge: event.target.value})
     }
+    onReset(event){
+        this.resetForm()
+    }
 
     render() {
         return (
-            <div className="Form">
+            <div className="form-body">
                 <div className="form-title">
                     Gym Submital Form
                 </div>
                 <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                    <div className="form-group row">
+                    <div className="form-group-row">
                         <label htmlFor="name" className="col-sm-2"> Name</label>
                         <input type="text" className="col-sm-4" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
                         <label htmlFor="email" className="col-sm-2">Email</label>
@@ -191,6 +194,7 @@ export default class Form extends React.Component {
                     </div>
 
                     <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type ="reset" onClick={this.onReset.bind(this)} className="btn btn-primary">Reset</button>
                 </form>
             </div>
         );
