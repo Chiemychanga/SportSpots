@@ -14,7 +14,7 @@ export default class Form extends React.Component {
             message: '',
             gymName: '',
             googleAddressLink: '',
-            sport: '',
+            sport: "Volleyball",
             dayOfWeek: '',
             time: '',
             cost: '',
@@ -52,9 +52,11 @@ export default class Form extends React.Component {
         this.setState({googleAddressLink: event.target.value})
     }
 
-    onSportChange(event){
-        this.setState({sport: event.target.value})
-    }
+    handleSportChange = event => {
+        this.setState({
+          sport: event.target.value
+        });
+    };
 
     onDayOfWeekChange(event){
         this.setState({dayOfWeek: event.target.value})
@@ -100,62 +102,95 @@ export default class Form extends React.Component {
                         <label htmlFor="name"> Name</label>
                         <input type="text" classNAme="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
                         <input type="email" className="form-control" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
                         <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="gym-name">Gym Name</label>
                         <input type="text" className="form-control" value={this.state.gymName} onChange={this.onGymNameChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="google-address-link">Google Address link</label>
                         <input type="text" className="form-control" value={this.state.googleAddressLink} onChange={this.onGoogleAddressLinkChange.bind(this)}/>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="sport">Sport</label>
-                        <input type="text" className="form-control" value={this.state.sport} onChange={this.onSportChange.bind(this)}/>
+
+                    <label htmlFor="sport">Sport</label>
+                
+                    <div className="form-check">
+                        <label>
+                        <input type="radio" value="Volleyball" checked={this.state.sport === "Volleyball"} onChange={this.handleSportChange} className="form-check-input"/>
+                        Volleyball
+                        </label>
                     </div>
+
+                    <div className="form-check">
+                        <label>
+                        <input type="radio" value="Basketball" checked={this.state.sport === "Basketball"} onChange={this.handleSportChange} className="form-check-input"/>
+                        Basketball
+                        </label>
+                    </div>
+
+                    <div className="form-check">
+                        <label>
+                        <input type="radio" value="Tennis" checked={this.state.sport === "Tennis"} onChange={this.handleSportChange} className="form-check-input"/>
+                        Tennis
+                        </label>
+                    </div>
+
                     <div className="form-group">
                         <label htmlFor="days-of-week">Days Of The Week Open</label>
                         <input type="text" className="form-control" value={this.state.dayOfWeek} onChange={this.onDayOfWeekChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="time">Time Gym Open</label>
                         <input type="text" className="form-control" value={this.state.time} onChange={this.onTimeChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="cost">Cost Per Session</label>
                         <input type="text" className="form-control" value={this.state.cost} onChange={this.onCostChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="level-description">Level Description</label>
                         <input type="text" className="form-control" value={this.state.levelDescription} onChange={this.onLevelDescriptionChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="website">Website Link</label>
                         <input type="text" className="form-control" value={this.state.website} onChange={this.onWebsiteChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="description">Description</label>
                         <input type="text" className="form-control" value={this.state.description} onChange={this.onDescriptionChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="number-of-courts">Number Of Courts</label>
                         <input type="text" className="form-control" value={this.state.numberOfCourts} onChange={this.onNumberOfCourtsChange.bind(this)}/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="court-type">Court Type</label>
                         <input type="text" className="form-control" value={this.state.courtType} onChange={this.onCourtTypeChange.bind(this)}/>
                     </div>
+                    
                     <div className="form-group">
                         <label htmlFor="min-age">Minimum Age</label>
                         <input type="text" className="form-control" value={this.state.minimumAge} onChange={this.onMinimumAgeChange.bind(this)}/>
                     </div>
+
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -184,7 +219,7 @@ export default class Form extends React.Component {
             message: '',
             gymName: '',
             googleAddressLink: '',
-            sport: '',
+            sport: 'Volleyball',
             dayOfWeek: '',
             time: '',
             cost: '',
@@ -193,6 +228,7 @@ export default class Form extends React.Component {
             description: '',
             numberOfCourts: '',
             courtType: '',
-            minimumAge: ''})
+            minimumAge: ''
+        })
     }
 }
