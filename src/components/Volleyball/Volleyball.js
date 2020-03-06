@@ -6,7 +6,7 @@ import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
 import gyms from "./gymsArray";
 import GMAP from "../GMap";
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
 
 export default class Volleyball extends React.Component {
     constructor() {
