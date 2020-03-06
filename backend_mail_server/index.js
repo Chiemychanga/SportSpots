@@ -58,7 +58,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'danlee@pdx.edu',  // Change to email address that you want to receive messages on
+    to: 'danlee@pdx.edu;larrypchiem@gmail.com;jjesse@pdx.edu',  // Change to email address that you want to receive messages on
     subject: 'Gym addition for sport spots',
     text: content
   }
