@@ -1,5 +1,6 @@
 import { OpenGymInst } from "../OpenGymInst";
 import MtScottCommunityCenter from "../Volleyball/images/MtScottCommunityCenter.jpg"; 
+import epcc from "../Volleyball/images/epcc.jpg";
 
 const gyms = [
     //Sunday gyms
@@ -22,7 +23,7 @@ const gyms = [
     "-122.5906866",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -60,7 +61,7 @@ const gyms = [
 
   //Monday Gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -78,7 +79,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -96,7 +97,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -116,7 +117,7 @@ const gyms = [
 
   //Tuesday gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -134,7 +135,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -152,7 +153,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -190,7 +191,7 @@ const gyms = [
 
   //Wednesday gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -208,7 +209,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -228,7 +229,7 @@ const gyms = [
 
   //Thursday gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -246,7 +247,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -264,7 +265,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -302,7 +303,7 @@ const gyms = [
 
   //Friday gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -320,7 +321,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -338,7 +339,7 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
@@ -358,7 +359,7 @@ const gyms = [
   
   //Saturday gyms
   new OpenGymInst(
-    null,
+    epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
     "https://goo.gl/maps/rFRJseEathXkB9XT6",
