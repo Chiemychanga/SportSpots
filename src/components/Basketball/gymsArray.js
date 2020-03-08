@@ -1,9 +1,36 @@
 import { OpenGymInst } from "../OpenGymInst";
 import MtScottCommunityCenter from "../Volleyball/images/MtScottCommunityCenter.jpg"; 
 import epcc from "../Volleyball/images/epcc.jpg";
+import CharlesJordanCC from "../Volleyball/images/CharlesJordanCC.jpg";
+import TheCourtsInBeaverton from "../Volleyball/images/TheCourtsInBeaverton.jpg";
+import SWCommunityCenter from "../Volleyball/images/SWCommunityCenter.jpg";
 
 const gyms = [
     //Sunday gyms
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Sunday",
+    "10 AM - 12 PM",
+    "Adults (18-59) $5.25, Teens (13-17) and Senirors (60+) $4.00",
+    "Family Basketball",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
+    SWCommunityCenter, "SW Community Center",
+    "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8",
+    "Basketball", "Sunday", "9 AM - 4 PM",
+    "Adults (18-59) $7.25, Teens (13-17) and Senirors (60+) $5.75, Youth (3-12) $4.50",
+    "Open Gym",
+    "http://www.portlandoregon.gov/parks/60161",
+    null, null, null, null,
+    "45.4758367", "-122.7241857"),
   new OpenGymInst(
     MtScottCommunityCenter,
     "Mt. Scott Community Center",
@@ -79,6 +106,37 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Monday",
+    "6:30 - 8:15 AM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
+    TheCourtsInBeaverton, "The Courts in Beaverton",
+    "14523 SW Millikan Way #110 Beaverton, Oregon 97005", "https://goo.gl/maps/HSHrQtSbvNMBiG29A",
+    "Basketball", "Monday", "11:30 AM - 1:30 PM", "$3", "Basketball Drop-In",
+    "http://www.thecourtsinbeaverton.com/DropinPlayxpf.html",
+    null, null, null, null,
+    "45.49529", "-122.8275229"),
+  new OpenGymInst(
+    SWCommunityCenter, "SW Community Center",
+    "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8",
+    "Basketball", "Monday", "12 - 2 PM",
+    "Adults (18-59) $7.25, Senirors (60+) $5.75",
+    "Adult Basketball (18+)",
+    "http://www.portlandoregon.gov/parks/60161",
+    null, null, null, null,
+    "45.4758367", "-122.7241857"),
+  new OpenGymInst(
     epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
@@ -95,6 +153,21 @@ const gyms = [
     null,
     "45.516171",
     "-122.5557077",
+  ),
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Monday",
+    "3 PM - 7 PM",
+    "Adults (18-20) $5.25, Teens (13-17) $4.00",
+    "Teen basketball (10-20)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
   ),
   new OpenGymInst(
     epcc,
@@ -135,6 +208,21 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Tuesday",
+    "6:30 - 8:15 AM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
     epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
@@ -169,6 +257,21 @@ const gyms = [
     null,
     "45.516171",
     "-122.5557077",
+  ),
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Tuesday",
+    "3 PM - 7 PM",
+    "Adults (18-20) $5.25, Teens (13-17) $4.00",
+    "Teen basketball (10-20)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
   ),
   new OpenGymInst(
     MtScottCommunityCenter,
@@ -209,6 +312,37 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Wednesday",
+    "6:30 - 8:15 AM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
+    TheCourtsInBeaverton, "The Courts in Beaverton",
+    "14523 SW Millikan Way #110 Beaverton, Oregon 97005", "https://goo.gl/maps/HSHrQtSbvNMBiG29A",
+    "Basketball", "Wednesday", "11:30 AM - 1:30 PM", "$3", "Basketball Drop-In",
+    "http://www.thecourtsinbeaverton.com/DropinPlayxpf.html",
+    null, null, null, null,
+    "45.49529", "-122.8275229"),
+  new OpenGymInst(
+    SWCommunityCenter, "SW Community Center",
+    "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8",
+    "Basketball", "Wednesday", "12 - 2 PM",
+    "Adults (18-59) $7.25, Senirors (60+) $5.75",
+    "Adult Basketball (18+)",
+    "http://www.portlandoregon.gov/parks/60161",
+    null, null, null, null,
+    "45.4758367", "-122.7241857"),
+  new OpenGymInst(
     epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
@@ -225,6 +359,21 @@ const gyms = [
     null,
     "45.516171",
     "-122.5557077",
+  ),
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Wednesday",
+    "3 PM - 7 PM",
+    "Adults (18-20) $5.25, Teens (13-17) $4.00",
+    "Teen basketball (10-20)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
   ),
 
   //Thursday gyms
@@ -245,6 +394,21 @@ const gyms = [
     null,
     "45.516171",
     "-122.5557077",
+  ),
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Thursday",
+    "6:30 - 8:15 AM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
   ),
   new OpenGymInst(
     epcc,
@@ -281,6 +445,21 @@ const gyms = [
     null,
     "45.516171",
     "-122.5557077",
+  ),
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Thursday",
+    "3 PM - 5 PM",
+    "Adults (18-20) $5.25, Teens (13-17) $4.00",
+    "Teen basketball (10-20)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
   ),
   new OpenGymInst(
     MtScottCommunityCenter,
@@ -321,6 +500,37 @@ const gyms = [
     "-122.5557077",
   ),
   new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Friday",
+    "6:30 - 8:15 AM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
+    TheCourtsInBeaverton, "The Courts in Beaverton",
+    "14523 SW Millikan Way #110 Beaverton, Oregon 97005", "https://goo.gl/maps/HSHrQtSbvNMBiG29A",
+    "Basketball", "Friday", "11:30 AM - 1:30 PM", "$3", "Basketball Drop-In",
+    "http://www.thecourtsinbeaverton.com/DropinPlayxpf.html",
+    null, null, null, null,
+    "45.49529", "-122.8275229"),
+  new OpenGymInst(
+    SWCommunityCenter, "SW Community Center",
+    "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8",
+    "Basketball", "Friday", "12 - 2 PM",
+    "Adults (18-59) $7.25, Senirors (60+) $5.75",
+    "Adult Basketball (18+)",
+    "http://www.portlandoregon.gov/parks/60161",
+    null, null, null, null,
+    "45.4758367", "-122.7241857"),
+  new OpenGymInst(
     epcc,
     "East Portland Community Center",
     "740 SE 106th Ave, Portland, OR 97216",
@@ -358,6 +568,30 @@ const gyms = [
   ),
   
   //Saturday gyms
+  new OpenGymInst(
+    CharlesJordanCC,
+    "Charles Jordan Community Center",
+    "9009 N Foss Ave, Portland, OR 97217",
+    "https://goo.gl/maps/QWW1XFA5MnxRyk7L8",
+    "Basketball",
+    "Saturday",
+    "12:30 - 3:30 PM",
+    "$5",
+    "Adult Basketball (18+)",
+    "https://issuu.com/portlandparks/docs/cjcc_final?fr=sOWU3MjUwOTgxNw",
+    null, null, null, null,
+    "45.5878217",
+    "-122.7133724"
+  ),
+  new OpenGymInst(
+    SWCommunityCenter, "SW Community Center",
+    "6820 Southwest 45th Avenue, Portland, OR 97219", "https://goo.gl/maps/K59PYeZthQvWCCgC8",
+    "Basketball", "Saturday", "2 - 7 PM",
+    "Adults (18-59) $7.25, Teens (13-17) and Senirors (60+) $5.75, Youth (3-12) $4.50",
+    "Open Gym",
+    "http://www.portlandoregon.gov/parks/60161",
+    null, null, null, null,
+    "45.4758367", "-122.7241857"),
   new OpenGymInst(
     epcc,
     "East Portland Community Center",
