@@ -14,3 +14,7 @@ h3, h5, p {
     display: inline-block;
     float:none;
 }
+
+.gym-spots {
+    margin-top: 5em;
+}
