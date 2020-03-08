@@ -7,6 +7,7 @@ import DayOfWeekNav from "../DayOfWeekNav";
 import DisplayGyms from "./displayGyms";
 import gyms from "./gymsArray";
 import GMAP from "../GMap";
+import Iframe from "react-iframe";
 
 export default class Basketball extends React.Component {
   constructor() {
@@ -28,24 +29,25 @@ export default class Basketball extends React.Component {
   }
 
   handleClick(dayOfWeek) {
-    this.setState( {dayOfWeek: dayOfWeek})
+    this.setState({ dayOfWeek: dayOfWeek });
   }
 
   render() {
     return (
       <div>
         <br />
-        <DayOfWeekNav handleClick={this.handleClick}/>
+        <DayOfWeekNav handleClick={this.handleClick} />
         <br />
         <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
         <br />
         <br />
-        <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
+        <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms} />
         <div className="gym-spots">
+          <h3>Open Gyms</h3>
           <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
         </div>
         <br />
-        <SportFooter sport="Basketball" handleClick={this.handleClick}/>
+        <SportFooter sport="Basketball" handleClick={this.handleClick} />
       </div>
     );
   }
