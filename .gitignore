@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+# backend dependencies
+/backend_mail_server/node_modules
+
 # testing
 /coverage
 
