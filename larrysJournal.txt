@@ -97,3 +97,6 @@ API and as long as I keep that calendar up, it'll appear up on my project.
 Mar 4, 2020
 Ensured that the npm test works. 
 
+March 8, 2020
+I added all calendars for basketball and tennis pages.
+Merged pull requests from Daniel. 
