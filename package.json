@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
     "express-session": "^1.17.0",
     "google-maps-react": "^2.0.2",
     "history": "^2.1.2",
@@ -24,9 +25,10 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server": "npm start --prefix backend_mail_server",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
