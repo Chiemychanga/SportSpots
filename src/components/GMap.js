@@ -1,6 +1,8 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import "./Tennis/css/tennis.css";
+const creds = require('./config'); //stores the gmap api key
+
 
 class GMap extends React.Component {
     render() {
@@ -43,5 +45,5 @@ function centerCalcLong(openGymInstance){
   return average;
 }
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBDSChLvqBMtpqq0W5WFUKMFmKrZtoICQs'
+    apiKey: creds.KEY
    })(GMap);
