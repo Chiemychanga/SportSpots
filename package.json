@@ -25,7 +25,7 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"react-scripts start\"",
+    "start": "npm install & concurrently \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "npm start --prefix backend_mail_server",
