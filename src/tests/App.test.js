@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { shallow, mount } from "enzyme";
 import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
+import Home from "../components/Home";
 
 describe("App test suite", () => {
     
@@ -28,4 +29,10 @@ describe("App test suite", () => {
     expect(wrapper.exists()).toBe(true);
     expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
   });
+
+  it("Verify the home child component is rendered", () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.exists()).toBe(true);
+    expect(wrapper.containsMatchingElement(<Home />)).toEqual(true);
+  })
 });
