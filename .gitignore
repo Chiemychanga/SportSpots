@@ -2,12 +2,12 @@
 .idea
 .DS_Store
 # dependencies
-/node_modules
+/client/node_modules
 /.pnp
 .pnp.js
 
 # backend dependencies
-/backend_mail_server/node_modules
+/server/node_modules
 
 # testing
 /coverage

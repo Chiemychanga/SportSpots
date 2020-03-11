@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config'); //stores the email user and pass credentials
 
-var transport = { //variable that holds the 
+var transport = {
     host: 'smtp.mailtrap.io', // mail trap is currently being used to catch spam and is a free service with one inbox
     port: 2525,
     auth: {
@@ -15,7 +15,7 @@ var transport = { //variable that holds the
 
 var transporter = nodemailer.createTransport(transport)
 
-transporter.verify((error, success) => { //credential verification using nodemmailer
+transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
@@ -23,7 +23,7 @@ transporter.verify((error, success) => { //credential verification using nodemma
   }
 });
 
-router.post('/send', (req, res, next) => {//stores the request in variables
+router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
   var message = req.body.message
@@ -39,7 +39,6 @@ router.post('/send', (req, res, next) => {//stores the request in variables
   var numberOfCourts = req.body.numberOfCourts
   var courtType = req.body.courtType
   var minimumAge = req.body.minimumAge
-  //puts it all in content to send as email
   var content = ` \n
                  Name: ${name} \n 
                  Email: ${email} \n 
@@ -57,14 +56,14 @@ router.post('/send', (req, res, next) => {//stores the request in variables
                  Court Type: ${courtType} \n 
                  Minimum Age: ${minimumAge}`
 
-  var mail = { //bundle as mail
+  var mail = {
     from: name,
-    to: 'danlee@pdx.edu',  // Change to email address that you want to receive messages on
+    to: 'danlee@pdx.edu;larrypchiem@gmail.com;jjesse@pdx.edu',  // Change to email address that you want to receive messages on
     subject: 'Gym addition for sport spots',
     text: content
   }
 
-  transporter.sendMail(mail, (err, data) => { //from node mailer
+  transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
         status: 'fail'

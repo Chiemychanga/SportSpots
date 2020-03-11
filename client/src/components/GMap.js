@@ -43,5 +43,5 @@ function centerCalcLong(openGymInstance){
   return average;
 }
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBDSChLvqBMtpqq0W5WFUKMFmKrZtoICQs'
+    apiKey: 'AIzaSyCc_4K1mrSXQtm8vuZnwYFTz0w2Megq-Ak'
    })(GMap);
