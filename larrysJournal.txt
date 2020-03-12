@@ -100,3 +100,6 @@ Ensured that the npm test works.
 March 8, 2020
 I added all calendars for basketball and tennis pages.
 Merged pull requests from Daniel. 
+
+March 11, 2020
+Making the site mobile friendly by fixing the fixed width images icons and the calendar and google maps.

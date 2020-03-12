@@ -18,5 +18,5 @@ div.mapDisplay{
   margin-right: auto;
   margin-left: auto;
   height: 600px;
-  width: 48%;
+  max-width: 80%;
 }

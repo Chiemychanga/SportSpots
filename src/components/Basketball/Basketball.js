@@ -37,24 +37,21 @@ export default class Basketball extends React.Component {
   render() {
     return (
       <div>
-        <br />
         <DayOfWeekNav handleClick={this.handleClick} />
-        <br />
         <h1 className="align-center">{this.state.dayOfWeek} Basketball</h1>
-        <br />
-        <br />
         <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms} />
         <div className="gym-spots">
           <h3>Open Gyms</h3>
           <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
         </div>
-        <br />
+                <div class="responsiveCal">
         <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=ZWFna2N2ZjFvM2xldmJtaHAyM3A1NWlrcDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23795548"
           className="google-calendar"
           width="800"
           height="600"
           frameborder="0"
           scrolling="no" />
+          </div>
         <SportFooter sport="Basketball" handleClick={this.handleClick} />
       </div>
     );

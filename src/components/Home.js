@@ -13,13 +13,13 @@ export default class Home extends React.Component {
         <h1>Sport Spots</h1>
         <div className="container">
           <Link to="/Basketball">
-            <img src={basketballPortal} alt="basketball-portal" />
+            <img className="sportIcon" src={basketballPortal} alt="basketball-portal" />
           </Link>
           <Link to="/Volleyball">
-            <img src={volleyballPortal} alt="volleyball-portal" />
+            <img className="sportIcon" src={volleyballPortal} alt="volleyball-portal" />
           </Link>
           <Link to="/Tennis">
-            <img src={tennisPortal} alt="tennis-portal" />
+            <img className="sportIcon" src={tennisPortal} alt="tennis-portal" />
           </Link>
         </div>
         <Footer />
