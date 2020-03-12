@@ -2,19 +2,19 @@
 display: flex;
 flex-wrap: wrap;  
 flex-direction: row;
+justify-content: center;
 }
 
 Footer {
     margin-top: 4em;
 }
 
-div.box{
-width: 400px;
-height: 400px;
+img {
+max-width: 40%;
 background-color: transparent;
 margin: 0 auto;
 }
 
-div.box:hover {
+img:hover {
     opacity: .7;
 }
