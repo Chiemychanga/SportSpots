@@ -21,7 +21,9 @@ export default class Volleyball extends React.Component {
     }
 
     handleClick(dayOfWeek) {
-        this.setState({ dayOfWeek: dayOfWeek })
+        if(dayOfWeek === "Monday" || dayOfWeek === "Tuesday" || dayOfWeek === "Wednesday" || dayOfWeek === "Thursday" || dayOfWeek === "Friday" || dayOfWeek === "Saturday" || dayOfWeek === "Sunday") {
+          this.setState({ dayOfWeek: dayOfWeek });
+        }
     }
 
     render() {
