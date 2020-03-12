@@ -9,7 +9,25 @@ div.form-body{
     margin-bottom: 10px;
     margin-right: 30px;
     margin-left: 30px;
-    background-color: grey;
+    background-color: rgba(168, 166, 168, 0.5);
+}
+
+form {
+    background-color: rgba(168, 166, 168, 0.5);
+    border-radius: 1%;
+    margin-bottom: 4em;
+    border: 1px solid #444;
+}
+
+#contact-note {
+    font-style: italic;
+    margin-bottom: 4em;
+}
+
+#contact-page-title {
+    margin: 1.5em 0px;
+    color: #007bff;
+    font-weight: bolder;
 }
 
 form#contact-form{
@@ -24,14 +42,18 @@ div.form-group-row{
     margin-bottom: 20px;
 }
 
+div.form-group-col-6{
+    width: 50%;
+}
+
 div.form{
     padding: 5% 5% 5% 5%;
     min-width: 1200px;
 }
 
 label#name-tag, label#email-tag, label#message-tag, label#gym-name-tag,label#google-address-link-tag,label#sport-tag, label#days-of-week-open-tag, label#time-tag, label#cost-tag, label#website-tag,label#level-description-tag, label#description-tag,label#number-of-courts-tag,label#court-type-tag,label#minimum-age-tag{
-    font-size:20px;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #444;
 }
 
 label#sport-select-tag{
@@ -43,6 +65,8 @@ button.btn{
     height:50px;
     margin-left: 10px; 
     margin-right: 10px;
-    background-color: limegreen;
-    border-color: limegreen;
+}
+
+legend {
+    margin-bottom: 2em;
 }
