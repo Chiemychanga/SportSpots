@@ -72,3 +72,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Google Maps Addition Tutorial
+
+This section has moved here: https://dev.to/jessicabetts/how-to-use-google-maps-api-and-react-js-26c2
+
+### Backend Mail Server and Mail Trap Set Up
+This section has moved here: https://blog.mailtrap.io/react-contact-form/
+
+
+### Front End Deloyment Tutorial
+This section has moved here: https://medium.com/google-cloud/hosting-a-react-js-app-on-google-cloud-app-engine-6d1341b75d8c
