@@ -83,3 +83,6 @@ This section has moved here: https://blog.mailtrap.io/react-contact-form/
 
 ### Front End Deloyment Tutorial
 This section has moved here: https://medium.com/google-cloud/hosting-a-react-js-app-on-google-cloud-app-engine-6d1341b75d8c
+
+### Credit for images
+The stock images were retrieved from https://unsplash.com/ , https://clipartart.com/, and gym images were pulled from google maps.
