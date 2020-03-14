@@ -2,10 +2,11 @@
 Sport Spots is a website where athletes in Portland can find local gyms in the community to play any sport, any day of the week. I was inspired to start this project after my experience using a website to find gyms in Portland to play volleyball. Although I liked the idea behind the website, I noticed the webpage lacked navigation and scheduling tools - two functions that my website improves.
 
 ## Tutorials used to learn React
+## Note, code was not taken or used from these tutorials in any way. It was simply for learning the basics of React.
 https://www.codecademy.com/learn/react-101
 https://github.com/dabit3/aws-appsync-react-workshop#getting-started---creating-the-react-application
 https://reactjs.org/tutorial/tutorial.html
-
+https://www.youtube.com/watch?v=Qqgm170PZwk&t=547s 
 
 ## Rest below here is template from the Create React App
 
