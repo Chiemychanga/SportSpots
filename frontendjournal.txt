@@ -1,0 +1,14 @@
+May 11, 2020
+I need to figure out how to build an API. 
+Time to educate myself. 
+https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
+
+May 29, 2020
+
+So turns out that I can't find a dang Google Maps API that will navigate you smoothly like how Yelp will when you click on the "Directions" button.
+
+I tried https://developers.google.com/maps/documentation/javascript/directions
+
+But all it does is show you a grayed out of the directions that driving would take you from point A to point B. It won't actually take you to navigate there based on your GPS.
+
+If there is an API for that, I couldn't find it. 

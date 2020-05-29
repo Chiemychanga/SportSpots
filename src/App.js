@@ -5,9 +5,10 @@ import Home from "./components/Home";
 import Volleyball from "./components/Volleyball/Volleyball";
 import Tennis from "./components/Tennis/Tennis";
 import Basketball from "./components/Basketball/Basketball";
+import Soccer from "./components/Soccer/Soccer";
 import Form from "./components/Form/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
             <Route path="/Volleyball" component={Volleyball} />
             <Route path="/Tennis" component={Tennis} />
             <Route path="/Basketball" component={Basketball} />
+            <Route path="/Soccer" component={Soccer} />
             <Route path="/Form" component={Form} />
           </Switch>
         </div>

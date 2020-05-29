@@ -5,6 +5,7 @@ import Adapter from "enzyme-adapter-react-16";
 import Volleyball from "../components/Volleyball/Volleyball";
 import Basketball from "../components/Basketball/Basketball";
 import Tennis from "../components/Tennis/Tennis";
+import Soccer from "../components/Soccer/Soccer";
 
 describe("Sport page test suite", () => {
   Enzyme.configure({ adapter: new Adapter() });

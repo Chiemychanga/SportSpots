@@ -20,3 +20,7 @@
     border:solid 1px #777;
     margin: 20px auto;
 }
+
+a {
+    text-decoration: blue;
+}

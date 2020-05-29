@@ -1,0 +1,20 @@
+[
+    {
+        "image": "", 
+        "gymName": "Portland Tennis Center", 
+        "address": "324 NE 12th Avenue, Portland, Oregon 97232",
+        "googleAddressLink": "https://goo.gl/maps/pD42T9Nez3XxQejD7", 
+        "sport": "Tennis",
+        "dayOfWeek": "Monday Tuesday Wednesday Thursday Friday",
+        "time": "5:30am to 11:00pm",
+        "cost": "$16.00 per Court for 75 minutes", 
+        "levelDescription": "Singles/Doubles",
+        "website": "http://www.thprd.org/facilities/recreation/conestoga/schedule/dropinsports/#dropin", 
+        "description": "Reservations open 3 days in advance at 8:30am.",  
+        "numberOfCourts": "8", 
+        "courtType": "Indoor", 
+        "minimumAge": "None", 
+        "lat": "45.525501",
+        "long": "-122.652735"
+    }
+]

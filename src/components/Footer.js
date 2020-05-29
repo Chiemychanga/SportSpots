@@ -30,6 +30,7 @@ export default class Footer extends React.Component {
               <Link to="/Volleyball">Volleyball</Link>
               <Link to="/Basketball">Basketball</Link>
               <Link to="/Tennis">Tennis</Link>
+              <Link to="/Soccer">Soccer</Link>
             </div>
           </div>
         </div>

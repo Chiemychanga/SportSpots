@@ -16,6 +16,7 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
+    "react-google-maps": "^9.4.5",
     "react-iframe": "^1.8.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
@@ -25,10 +26,9 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "start": "npm install & concurrently \"npm run server\" \"react-scripts start\"",
+    "start": "npm install & concurrently \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "npm start --prefix backend_mail_server",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
