@@ -41,6 +41,8 @@ export default class SportFooter extends React.Component {
               <Link to="/Volleyball">Volleyball</Link>
               <Link to="/Basketball">Basketball</Link>
               <Link to="/Tennis">Tennis</Link>
+              <Link to="/Soccer">Soccer</Link>
+              <Link to="/MMA">MMA</Link>
             </div>
           </div>
         </div>
