@@ -1,6 +1,6 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
-import "./Tennis/css/tennis.css";
+import "../App.css";
 const creds = require('./config'); //stores the gmap api key
 
 
@@ -15,6 +15,7 @@ class GMap extends React.Component {
             google={this.props.google}
             zoom={11}
             initialCenter={{ lat: centerCalcLat(newGymArray), lng: centerCalcLong(newGymArray)}}
+            className="mapDisplay"
             >
 
             {newGymArray.map(function(gym, i) {
