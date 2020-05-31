@@ -30,7 +30,7 @@ export default class MMA extends React.Component {
         return (
             <div>
                 <DayOfWeekNav handleClick={this.handleClick} />
-                <h1 className="align-center">{this.state.dayOfWeek} Volleyball</h1>
+                <h1 className="align-center">{this.state.dayOfWeek} MMA</h1>
                 <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms}/>
                 <div className="gym-spots">
                     <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
