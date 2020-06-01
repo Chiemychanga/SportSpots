@@ -17,3 +17,18 @@ May 30, 2020
 
 https://www.youtube.com/watch?v=PnIjfte7284
 Followed this video to deploy on google cloud platform.. 
+
+
+Here are the steps to deploy the app to Google Cloud:
+
+    `npm run build`
+    upload the build folder ot the Storage bucket under 'sportspot'
+    upload the app.yaml file there too.
+    run `gsutil rsync -r gs://sportspot ./sportspots`
+    `cd sportspots`
+    `gcloud app deploy`
+
+
+Link to deployed site: https://sportspots-277519.df.r.appspot.com/
+
+Now it'd be nice if everytime I make a change and push up to master that I'd see the change on this deployed website. 

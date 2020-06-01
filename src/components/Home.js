@@ -17,31 +17,31 @@ export default class Home extends React.Component {
         <div className="container">
           <div className="box">
             <Link to="/Volleyball">
-              <img src={portal1} alt="volleyball-portal" class="img-fluid" title="Volleyball"/>
+              <img src={portal1} alt="volleyball-portal" class="img-fluid" title="Volleyball Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="/Basketball">
-              <img src={portal2} alt="basketball-portal" class="img-fluid" title="Basketball"/>
+              <img src={portal2} alt="basketball-portal" class="img-fluid" title="Basketball Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="/Tennis">
-              <img src={portal3} alt="tennis-portal" class="img-fluid" title="Tennis"/>
+              <img src={portal3} alt="tennis-portal" class="img-fluid" title="Tennis Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="Soccer">
-            <img src={portal4} alt="soccer-portal" class="img-fluid" title="Soccer/Futbal"/>
+            <img src={portal4} alt="soccer-portal" class="img-fluid" title="Soccer/Futbal Icon"/>
             <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="MMA">
-            <img src={portal5} alt="mma-portal" title="Mixed Martial Arts"/>
+            <img src={portal5} alt="mma-portal" title="Mixed Martial Arts Icon"/>
             <br /><br />
             </Link>
           </div>

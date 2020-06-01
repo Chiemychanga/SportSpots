@@ -27,11 +27,11 @@ export default class Footer extends React.Component {
             </div>
             <div className="col-3 secondFooterColumn">
               <h5>Sports</h5>
-              <Link to="/Volleyball">Volleyball</Link>
-              <Link to="/Basketball">Basketball</Link>
-              <Link to="/Tennis">Tennis</Link>
-              <Link to="/Soccer">Soccer</Link>
-              <Link to="/MMA">MMA</Link>
+              <Link to="/Volleyball" title="Go to Volleyball page">Volleyball</Link>
+              <Link to="/Basketball" title="Go to Basketball page">Basketball</Link>
+              <Link to="/Tennis" title="Go to Tennis page">Tennis</Link>
+              <Link to="/Soccer" title="Go to Soccer page">Soccer</Link>
+              <Link to="/MMA" title="Go to MMA page">MMA</Link>
             </div>
           </div>
         </div>

@@ -22,6 +22,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link SundayLink"
               onClick={e => {this.props.handleClick("Sunday");}}
               href="#"
+              title="Go to Sunday gyms"
             >
               Sunday
             </a>
@@ -29,6 +30,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link MondayLink"
               onClick={e => {this.props.handleClick("Monday");}}
               href="#"
+              title="Go to Monday gyms"
             >
               Monday
             </a>
@@ -36,6 +38,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link TuesdayLink"
               onClick={e => {this.props.handleClick("Tuesday");}}
               href="#"
+              title="Go to Tuesday gyms"
             >
               Tuesday
             </a>
@@ -43,6 +46,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link WednesdayLink"
               onClick={e => {this.props.handleClick("Wednesday");}}
               href="#"
+              title="Go to Wednesday gyms"
             >
               Wednesday
             </a>
@@ -50,6 +54,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link ThursdayLink"
               onClick={e => {this.props.handleClick("Thursday");}}
               href="#"
+              title="Go to Thursday gyms"
             >
               Thursday
             </a>
@@ -57,6 +62,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link FridayLink"
               onClick={e => {this.props.handleClick("Friday");}}
               href="#"
+              title="Go to Friday gyms"
             >
               Friday
             </a>
@@ -64,6 +70,7 @@ export default class daysOfWeekNav extends React.Component {
               className="nav-item nav-link SaturdayLink"
               onClick={e => {this.props.handleClick("Saturday");}}
               href="#"
+              title="Go to Saturday gyms"
             >
               Saturday
             </a>

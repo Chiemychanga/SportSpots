@@ -28,21 +28,21 @@ export default class SportFooter extends React.Component {
             </div>
             <div className="col-3 secondFooterColumn">
               <h5>{this.props.sport} By Day</h5>
-              <a href="#" onClick={e => this.props.handleClick("Sunday")}>Sunday</a>
-              <a href="#" onClick={e => this.props.handleClick("Monday")}>Monday</a>
-              <a href="#" onClick={e => this.props.handleClick("Tuesday")}>Tuesday</a>
-              <a href="#" onClick={e => this.props.handleClick("Wednesday")}>Wendnesday</a>
-              <a href="#" onClick={e => this.props.handleClick("Thursday")}>Thursday</a>
-              <a href="#" onClick={e => this.props.handleClick("Friday")}>Friday</a>
-              <a href="#" onClick={e => this.props.handleClick("Saturday")}>Saturday</a>
+              <a href="#" title="Go to Sunday gyms" onClick={e => this.props.handleClick("Sunday")}>Sunday</a>
+              <a href="#" title="Go to Monday gyms" onClick={e => this.props.handleClick("Monday")}>Monday</a>
+              <a href="#" title="Go to Tuesday gyms" onClick={e => this.props.handleClick("Tuesday")}>Tuesday</a>
+              <a href="#" title="Go to Wednesday gyms" onClick={e => this.props.handleClick("Wednesday")}>Wendnesday</a>
+              <a href="#" title="Go to Thursday gyms" onClick={e => this.props.handleClick("Thursday")}>Thursday</a>
+              <a href="#" title="Go to Friday gyms" onClick={e => this.props.handleClick("Friday")}>Friday</a>
+              <a href="#" title="Go to Saturday gyms" onClick={e => this.props.handleClick("Saturday")}>Saturday</a>
             </div>
             <div className="col-3 secondFooterColumn">
               <h5>Sports</h5>
-              <Link to="/Volleyball">Volleyball</Link>
-              <Link to="/Basketball">Basketball</Link>
-              <Link to="/Tennis">Tennis</Link>
-              <Link to="/Soccer">Soccer</Link>
-              <Link to="/MMA">MMA</Link>
+              <Link to="/Volleyball" title="Go to Volleyball page">Volleyball</Link>
+              <Link to="/Basketball" title="Go to Basketball page">Basketball</Link>
+              <Link to="/Tennis" title="Go to Tennis page">Tennis</Link>
+              <Link to="/Soccer" title="Go to Soccer page">Soccer</Link>
+              <Link to="/MMA" title="Go to MMA page">MMA</Link>
             </div>
           </div>
         </div>
