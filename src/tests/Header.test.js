@@ -10,7 +10,7 @@ describe("Header nav test suite", () => {
   it("There are four links within the navbar representing each sport", async () => {
     const links = shallow(<Header />).find("li");
     //All of the sport links currently available
-    const sports = ["Basketball", "Volleyball", "Tennis", "Soccer", "MMA"];
+    const sports = ["Basketball", "Volleyball", "Tennis", "Soccer", "MMA", "Swimming"];
     expect(links.length).toEqual(sports.length);
     for (let i = 0; i < links.length; ++i) {
       expect(links.at(i).text()).toEqual(sports[i]);

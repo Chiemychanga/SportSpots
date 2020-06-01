@@ -6,6 +6,7 @@ import Volleyball from "./components/Volleyball/Volleyball";
 import Tennis from "./components/Tennis/Tennis";
 import Basketball from "./components/Basketball/Basketball";
 import Soccer from "./components/Soccer/Soccer";
+import Swimming from "./components/Swimming/Swimming";
 import MMA from "./components/MMA/MMA";
 import Form from "./components/Form/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +25,7 @@ export default class App extends React.Component {
             <Route path="/Basketball" component={Basketball} />
             <Route path="/Soccer" component={Soccer} />
             <Route path="/MMA" component={MMA} />
+            <Route path="/Swimming" component={Swimming} />
             <Route path="/Form" component={Form} />
           </Switch>
         </div>

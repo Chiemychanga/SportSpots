@@ -6,7 +6,7 @@ export class OpenGym extends React.Component {
       <div className="gym-info">
         <h2>{this.props.gym.getGymName()}</h2>
         <br />
-        <img src={this.props.gym.getImage()} alt={this.props.gym.getGymName()} title={this.props.gym.getGymName()+ " image"} ></img>
+        <img src={this.props.gym.getImage()} title={this.props.gym.getGymName + " image"} alt={this.props.gym.getGymName()} title={this.props.gym.getGymName()+ " image"} ></img>
         <br />
         <br />
         <li><b>Address:</b> <a href={this.props.gym.getGoogleAddressLink()} title={"Go to " + this.props.gym.getGymName() + " on Google Maps"} target="_blank">{this.props.gym.getAddress()}</a></li>

@@ -4,7 +4,7 @@ export class OpenGym extends React.Component {
   render() {
     return (
       <div className="gym-info">
-        <img src={this.props.gym.getImage()} alt={this.props.gym.getGymName()}></img>
+        <img src={this.props.gym.getImage()} title={this.props.gym.getGymName + " image"} alt={this.props.gym.getGymName()}></img>
         <h2>{this.props.gym.getGymName()}</h2>
         <li><b>Address:</b> <a href={this.props.gym.getGoogleAddressLink()} target="_blank">{this.props.gym.getAddress()}</a></li>
         <li><b>Day(s) of the week:</b>{this.props.gym.getDayOfWeek()}</li>

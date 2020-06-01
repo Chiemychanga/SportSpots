@@ -5,6 +5,7 @@ import portal2 from "./images/basketballPortal.png";
 import portal3 from "./images/tennisPortal.png";
 import portal4 from "./images/soccerPortal.png";
 import portal5 from "./images/mmaPortal.png";
+import portal6 from "./images/swimmingPortal.png";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
@@ -41,7 +42,13 @@ export default class Home extends React.Component {
           </div>
           <div className="box">
             <Link to="MMA">
-            <img src={portal5} alt="mma-portal" title="Mixed Martial Arts Icon"/>
+            <img src={portal5} alt="mma-portal" className="img-fluid" title="Mixed Martial Arts Icon"/>
+            <br /><br />
+            </Link>
+          </div>
+          <div className="box">
+            <Link to="Swimming">
+            <img src={portal6} alt="swimming-portal" className="img-fluid" title="Swimming Icon"/>
             <br /><br />
             </Link>
           </div>
