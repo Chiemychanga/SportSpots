@@ -17,25 +17,25 @@ export default class Home extends React.Component {
         <div className="container">
           <div className="box">
             <Link to="/Volleyball">
-              <img src={portal1} alt="volleyball-portal" class="img-fluid" title="Volleyball Icon"/>
+              <img src={portal1} alt="volleyball-portal" className="img-fluid" title="Volleyball Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="/Basketball">
-              <img src={portal2} alt="basketball-portal" class="img-fluid" title="Basketball Icon"/>
+              <img src={portal2} alt="basketball-portal" className="img-fluid" title="Basketball Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="/Tennis">
-              <img src={portal3} alt="tennis-portal" class="img-fluid" title="Tennis Icon"/>
+              <img src={portal3} alt="tennis-portal" className="img-fluid" title="Tennis Icon"/>
               <br /><br />
             </Link>
           </div>
           <div className="box">
             <Link to="Soccer">
-            <img src={portal4} alt="soccer-portal" class="img-fluid" title="Soccer/Futbal Icon"/>
+            <img src={portal4} alt="soccer-portal" className="img-fluid" title="Soccer/Futbal Icon"/>
             <br /><br />
             </Link>
           </div>
