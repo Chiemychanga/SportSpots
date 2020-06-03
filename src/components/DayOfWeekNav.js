@@ -5,77 +5,78 @@ export default class daysOfWeekNav extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div id="daysOfWeekNav" className="navbar-nav">
+          <ul id="navbarNavAltMarkup" className="d-flex flex-row navbar-nav mx-auto">
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark SundayLink"
               onClick={e => {this.props.handleClick("Sunday");}}
               href="#"
               title="Go to Sunday gyms"
             >
-              Sunday
+              Sun
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark MondayLink"
               onClick={e => {this.props.handleClick("Monday");}}
               href="#"
               title="Go to Monday gyms"
             >
-              Monday
+              Mon
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark TuesdayLink"
               onClick={e => {this.props.handleClick("Tuesday");}}
               href="#"
               title="Go to Tuesday gyms"
             >
-              Tuesday
+              Tue
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark WednesdayLink"
               onClick={e => {this.props.handleClick("Wednesday");}}
               href="#"
               title="Go to Wednesday gyms"
             >
-              Wednesday
+              Wed
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark ThursdayLink"
               onClick={e => {this.props.handleClick("Thursday");}}
               href="#"
               title="Go to Thursday gyms"
             >
-              Thursday
+              Thu
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark FridayLink"
               onClick={e => {this.props.handleClick("Friday");}}
               href="#"
               title="Go to Friday gyms"
             >
-              Friday
+              Fri
             </a>
+            </li>
+            <li className="nav-item">
             <a
               className="nav-item nav-link text-dark SaturdayLink"
               onClick={e => {this.props.handleClick("Saturday");}}
               href="#"
               title="Go to Saturday gyms"
             >
-              Saturday
+              Sat
             </a>
-          </div>
-        </div>
+            </li>
+          </ul>
       </nav>
     );
   }
