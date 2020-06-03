@@ -15,7 +15,7 @@ export default class Home extends React.Component {
       <div className="home">
         <br />
         <h1>Sport Spots</h1>
-        <div className="container">
+        <div className="gridWrapper justify-content-md-center">
           <div className="box">
             <Link to="/Volleyball">
               <img src={portal1} alt="volleyball-portal" className="img-fluid" title="Volleyball Icon"/>
