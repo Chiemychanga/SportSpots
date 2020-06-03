@@ -36,7 +36,7 @@ export default class Swimming extends React.Component {
                     <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
                 </div>
                 <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bXQ3Z3ExdDczZGZ2dHFqaTh1dGlyZ242MzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E"
-                    className="center-iframe"
+                    className="center-iframe calendar-w-100"
                     width="800"
                     height="600"
                     frameborder="0"
