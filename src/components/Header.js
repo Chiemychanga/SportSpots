@@ -20,7 +20,7 @@ export default class Header extends React.Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav flex-d-responsive-nav">
               <li className="nav-item"><Link to="/Basketball">Basketball</Link></li>
               <li className="nav-item"><Link to="/Volleyball">Volleyball</Link></li>
               <li className="nav-item"><Link to="/Tennis">Tennis</Link></li>
