@@ -6,10 +6,10 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link to="/" className="navbar-brand">Sport Spots</Link>
+        <nav className="navbar navbar-expand-lg navbar-light bg-nbablue">
+          <Link to="/" className="navbar-brand text-white">Sport Spots</Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler bg-light"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavDropdown"

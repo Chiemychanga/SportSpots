@@ -19,7 +19,7 @@ export default class daysOfWeekNav extends React.Component {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div id="daysOfWeekNav" className="navbar-nav">
             <a
-              className="nav-item nav-link SundayLink"
+              className="nav-item nav-link text-dark SundayLink"
               onClick={e => {this.props.handleClick("Sunday");}}
               href="#"
               title="Go to Sunday gyms"
@@ -27,7 +27,7 @@ export default class daysOfWeekNav extends React.Component {
               Sunday
             </a>
             <a
-              className="nav-item nav-link MondayLink"
+              className="nav-item nav-link text-dark MondayLink"
               onClick={e => {this.props.handleClick("Monday");}}
               href="#"
               title="Go to Monday gyms"
@@ -35,7 +35,7 @@ export default class daysOfWeekNav extends React.Component {
               Monday
             </a>
             <a
-              className="nav-item nav-link TuesdayLink"
+              className="nav-item nav-link text-dark TuesdayLink"
               onClick={e => {this.props.handleClick("Tuesday");}}
               href="#"
               title="Go to Tuesday gyms"
@@ -43,7 +43,7 @@ export default class daysOfWeekNav extends React.Component {
               Tuesday
             </a>
             <a
-              className="nav-item nav-link WednesdayLink"
+              className="nav-item nav-link text-dark WednesdayLink"
               onClick={e => {this.props.handleClick("Wednesday");}}
               href="#"
               title="Go to Wednesday gyms"
@@ -51,7 +51,7 @@ export default class daysOfWeekNav extends React.Component {
               Wednesday
             </a>
             <a
-              className="nav-item nav-link ThursdayLink"
+              className="nav-item nav-link text-dark ThursdayLink"
               onClick={e => {this.props.handleClick("Thursday");}}
               href="#"
               title="Go to Thursday gyms"
@@ -59,7 +59,7 @@ export default class daysOfWeekNav extends React.Component {
               Thursday
             </a>
             <a
-              className="nav-item nav-link FridayLink"
+              className="nav-item nav-link text-dark FridayLink"
               onClick={e => {this.props.handleClick("Friday");}}
               href="#"
               title="Go to Friday gyms"
@@ -67,7 +67,7 @@ export default class daysOfWeekNav extends React.Component {
               Friday
             </a>
             <a
-              className="nav-item nav-link SaturdayLink"
+              className="nav-item nav-link text-dark SaturdayLink"
               onClick={e => {this.props.handleClick("Saturday");}}
               href="#"
               title="Go to Saturday gyms"

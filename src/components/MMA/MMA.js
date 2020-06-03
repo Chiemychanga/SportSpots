@@ -40,7 +40,9 @@ export default class MMA extends React.Component {
                     width="800"
                     height="600"
                     frameborder="0"
-                    scrolling="no" />
+                    scrolling="no"
+                    title="MMA Google Calendar"
+                />
                 <SportFooter sport="Volleyball" handleClick={this.handleClick} />
             </div>
         );

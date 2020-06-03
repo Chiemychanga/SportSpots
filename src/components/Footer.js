@@ -10,9 +10,9 @@ export default class Footer extends React.Component {
         <div className="container">
           <div className="row">
             <div id="firstFooterColumn" className="col-8">
-              <h4>
+              <h2>
                 Know of an open gym? <Link to="/Form"> Contact Us!</Link>
-              </h4>
+              </h2>
               <br/>
               <p>
                 If you facilitate and/or know of an open gym that you would like
@@ -26,12 +26,13 @@ export default class Footer extends React.Component {
               </p>
             </div>
             <div className="col-3 secondFooterColumn">
-              <h5>Sports</h5>
+              <h2>Sports</h2>
               <Link to="/Volleyball" title="Go to Volleyball page">Volleyball</Link>
               <Link to="/Basketball" title="Go to Basketball page">Basketball</Link>
               <Link to="/Tennis" title="Go to Tennis page">Tennis</Link>
               <Link to="/Soccer" title="Go to Soccer page">Soccer</Link>
               <Link to="/MMA" title="Go to MMA page">MMA</Link>
+              <Link to="/Swimming" title="Go to Swimming page">Swimming</Link>
             </div>
           </div>
         </div>

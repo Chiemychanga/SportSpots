@@ -40,7 +40,8 @@ export default class Volleyball extends React.Component {
                     width="800"
                     height="600"
                     frameborder="0"
-                    scrolling="no" />
+                    scrolling="no" 
+                    title="Volleyball Google Calendar"/>
                 <SportFooter sport="Volleyball" handleClick={this.handleClick} />
             </div>
         );

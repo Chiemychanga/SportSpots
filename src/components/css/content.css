@@ -7,9 +7,15 @@
     word-wrap: break-word;
     width: 60%;
     padding: 20px;
-    color: black;
-    background-color: rgba(168, 166, 168, 0.5);
+    color: white;
+    text-decoration: none;
+    /* background-color: rgba(168, 166, 168, 0.5); */
+    background-color: #4D6EAB;
     margin: 20px auto;
+}
+
+.gym-info a {
+    color: white;
 }
 
 .gym-info img {
@@ -21,8 +27,9 @@
     margin: 20px auto;
 }
 
-a {
-    text-decoration: blue;
+.nav-item a {
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (max-width: 700px) {

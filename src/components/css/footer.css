@@ -1,8 +1,15 @@
 footer {
-    background-color: rgba(168, 166, 168, 0.5);
+    /* background-color: rgba(168, 166, 168, 0.5); */
+    background-color: white;
+    color: black;
 }
 
 .secondFooterColumn {
     display: flex;
     flex-direction: column;
+}
+
+.secondFooterColumn > a, h2 > a {
+    color: black;
+    text-decoration: none;
 }
