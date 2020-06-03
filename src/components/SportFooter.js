@@ -10,7 +10,7 @@ export default class SportFooter extends React.Component {
         <br />
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-sm-12 suggestion">
+            <div className="col-12 col-md-6 suggestion">
               <h2>
                 Know of an open gym? <Link to="/Form"> Contact Us!</Link>
               </h2>
@@ -26,7 +26,7 @@ export default class SportFooter extends React.Component {
                 &copy; 2020 Sport Spots. All rights reserved.
               </p>
             </div>
-            <div className="col-lg-3 col-sm-6 secondFooterColumn daysColumn">
+            <div className="col-6 col-md-3 secondFooterColumn daysColumn">
               <h3>{this.props.sport} By Day</h3>
               <a href="#" title="Go to Sunday gyms" onClick={e => this.props.handleClick("Sunday")}>Sunday</a>
               <a href="#" title="Go to Monday gyms" onClick={e => this.props.handleClick("Monday")}>Monday</a>
@@ -36,7 +36,7 @@ export default class SportFooter extends React.Component {
               <a href="#" title="Go to Friday gyms" onClick={e => this.props.handleClick("Friday")}>Friday</a>
               <a href="#" title="Go to Saturday gyms" onClick={e => this.props.handleClick("Saturday")}>Saturday</a>
             </div>
-            <div className="col-lg-3 col-sm-6 secondFooterColumn sportsColumn">
+            <div className="col-6 col-md-3 secondFooterColumn sportsColumn">
               <h3>Sports</h3>
               <Link to="/Volleyball" title="Go to Volleyball page">Volleyball</Link>
               <Link to="/Basketball" title="Go to Basketball page">Basketball</Link>

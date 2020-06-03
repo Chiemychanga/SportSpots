@@ -5,7 +5,7 @@
 .gym-info {
     text-align: left;
     word-wrap: break-word;
-    width: 60%;
+    width: 70%;
     padding: 20px;
     color: white;
     text-decoration: none;
@@ -55,4 +55,7 @@
         width: 100%;
     }
 
+    .gym-spots {
+        margin: 0 1%;
+    }
 }
