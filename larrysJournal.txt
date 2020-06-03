@@ -88,7 +88,7 @@ Met with Daniel at Starbucks to merge code and work on getting his code up to da
 Mar 2, 2020
 Added latitude and longitude in Volleyball gyms and got google maps api working on volleyball pages.
 
-Now working on Google Calendar API following this document: https://www.sivadass.in/using-google-calendar-api-with-react-js/
+Now working on Google Calendar API following this document: https://www.sivadass.in/using-center-iframe-api-with-react-js/
 
 Mar 3, 2020 
 Realized that I could just share my calendar and use an Iframe with react-iframe. Much more simple. It's not an

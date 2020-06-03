@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-.google-calendar {
+.center-iframe {
     border:solid 1px #777;
     margin: 20px auto;
 }
@@ -32,12 +32,22 @@
     color: white;
 }
 
+.amazonLink {
+    border:none !important; 
+    margin:0px !important;
+}
+
+.amazonTextAndImage {
+    width: 120px;
+    height: 240px;
+}
+
 @media only screen and (max-width: 700px) {
     .gym-info {
         width: 100%;
     }
 
-    .google-calendar {
+    .center-iframe {
         width: 100%;
     }
 

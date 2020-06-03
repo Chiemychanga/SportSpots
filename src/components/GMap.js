@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import "../App.css";
 const creds = require('./config'); //stores the gmap api key
 
@@ -37,7 +37,6 @@ function centerCalcLat(openGymInstance) {
   let average = 0;
   for (let i = 0; i < openGymInstance.length; i++) {
     average = average + parseFloat(openGymInstance[i].lat);
-    //console.log(average);
   }
   average = (average / openGymInstance.length);
   return average;
