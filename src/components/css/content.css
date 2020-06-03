@@ -26,6 +26,10 @@
     width: 100%;
 }
 
+.gym-info ul {
+    padding-left: 0;
+}
+
 .center-iframe {
     border:solid 1px #777;
     margin: 20px auto;
