@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import "../App.css";
 const creds = require('./config'); //stores the gmap api key
 
@@ -18,18 +18,24 @@ class GMap extends React.Component {
             className="mapDisplay"
             >
 
-            {newGymArray.map(function(gym, i) {
-              return <Marker gym={gym} key={i} position={{lat: gym.lat, lng: gym.long}} label={gym.gymName}/>;
-            })}
-            </Map>
-          </div>
-        );
-    }
+          {newGymArray.map(function (gym, i) {
+            return <Marker
+              gym={gym}
+              key={i}
+              position={{ lat: gym.lat, lng: gym.long }}
+              label={gym.gymName}
+              onClick={() => window.open(gym.googleAddressLink)}
+            />;
+          })}
+        </Map>
+      </div>
+    );
+  }
 };
 
-function centerCalcLat(openGymInstance){
+function centerCalcLat(openGymInstance) {
   let average = 0;
-  for (let i = 0; i < openGymInstance.length; i++){
+  for (let i = 0; i < openGymInstance.length; i++) {
     average = average + parseFloat(openGymInstance[i].lat);
     //console.log(average);
   }
@@ -37,14 +43,14 @@ function centerCalcLat(openGymInstance){
   return average;
 }
 
-function centerCalcLong(openGymInstance){
+function centerCalcLong(openGymInstance) {
   let average = 0;
-  for (let i = 0; i < openGymInstance.length; i++){
+  for (let i = 0; i < openGymInstance.length; i++) {
     average = average + parseFloat(openGymInstance[i].long);
   }
   average = (average / openGymInstance.length);
   return average;
 }
 export default GoogleApiWrapper({
-    apiKey: creds.KEY
-   })(GMap);
+  apiKey: creds.KEY
+})(GMap);

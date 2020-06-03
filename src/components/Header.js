@@ -6,7 +6,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-nbablue">
+        <nav className="navbar navbar-expand-lg navbar-light bg-nbablue" title="Header with Sport Links">
           <Link to="/" className="navbar-brand text-white">Sport Spots</Link>
           <button
             className="navbar-toggler bg-light"

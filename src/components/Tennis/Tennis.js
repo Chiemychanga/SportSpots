@@ -35,14 +35,14 @@ export default class Tennis extends React.Component {
                 <div className="gym-spots">
                     <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
                 </div>
-        <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=ZmZsY2NsZGpkdWZvcmEydmppNDlyOGJhNnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000"
-          className="google-calendar"
-          width="800"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-          title="Tennis Google Calendar"
-          />
+                <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=ZmZsY2NsZGpkdWZvcmEydmppNDlyOGJhNnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000"
+                    className="google-calendar"
+                    width="800"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no"
+                    title="Tennis Google Calendar"
+                />
                 <SportFooter sport="Tennis" handleClick={this.handleClick} />
             </div>
         );

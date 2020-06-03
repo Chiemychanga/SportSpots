@@ -45,7 +45,7 @@ export default class Basketball extends React.Component {
         <br />
         <GMAP dayOfWeek={this.state.dayOfWeek} gymsArray={gyms} />
         <div className="gym-spots">
-          <h3>Open Gyms</h3>
+          <h2>Open Gyms</h2>
           <DisplayGyms dayOfWeek={this.state.dayOfWeek} />
         </div>
         <br />

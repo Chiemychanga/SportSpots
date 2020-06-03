@@ -106,9 +106,9 @@ export default class Form extends React.Component {
           method="POST"
         >
           <legend>
-            <h4>
-              <b>Gym Submital Form</b>
-            </h4>
+            <h2>
+              <b>Gym Submission Form</b>
+            </h2>
           </legend>
           <div className="container-fluid">
             <div className="row">

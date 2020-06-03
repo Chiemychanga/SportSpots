@@ -32,3 +32,13 @@ Here are the steps to deploy the app to Google Cloud:
 Link to deployed site: https://sportspots-277519.df.r.appspot.com/
 
 Now it'd be nice if everytime I make a change and push up to master that I'd see the change on this deployed website. 
+
+6/2/2020
+Working on axe-react for accessibility changes. Cannot figure out a way to make it better color contrast for the Google calendar exported.
+
+Also the google maps images doesn't come with landmarks. 
+
+Going to see if I can add the Google Address link navigation to the Google map markers.
+UPDATE: Yay I'm glad that my friend Brendan asked me about my website. And I talked to him about
+how I couldn't find a google map api that would navigate me there. But I did have the googleAddressLink So
+I used a window.open(gym.googleAddressLink) to the marker on an OnClick event. 
