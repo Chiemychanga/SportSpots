@@ -22,7 +22,7 @@ Followed this video to deploy on google cloud platform..
 Here are the steps to deploy the app to Google Cloud:
 
     `npm run build`
-    upload the build folder ot the Storage bucket under 'sportspot'
+    upload the build folder to the Storage bucket under 'sportspot'
     upload the app.yaml file there too.
     run `gsutil rsync -r gs://sportspot ./sportspots`
     `cd sportspots`
@@ -42,3 +42,6 @@ Going to see if I can add the Google Address link navigation to the Google map m
 UPDATE: Yay I'm glad that my friend Brendan asked me about my website. And I talked to him about
 how I couldn't find a google map api that would navigate me there. But I did have the googleAddressLink So
 I used a window.open(gym.googleAddressLink) to the marker on an OnClick event. 
+
+
+Added amazon links.
