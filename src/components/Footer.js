@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
                 &copy; 2020 Sport Spots. All rights reserved.
               </p>
             </div>
-            <div className="col-3 secondFooterColumn">
+            <div className="col-4 secondFooterColumn">
               <h2>Sports</h2>
               <Link to="/Volleyball" title="Go to Volleyball page">Volleyball</Link>
               <Link to="/Basketball" title="Go to Basketball page">Basketball</Link>
